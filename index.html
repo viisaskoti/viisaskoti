@@ -498,11 +498,18 @@
             align-items: center;
             justify-content: center;
         }
+        /* Стиль для кликабельных картинок с эффектом увеличения */
         .ui-image-box img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            cursor: zoom-in;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .ui-image-box img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
         }
         .ui-image-group {
             display: flex;
@@ -529,6 +536,51 @@
             padding-left: 20px;
             color: #475569;
         }
+
+        /* Стили для модального окна (увеличение картинки) */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.9); /* Темный стильный фон */
+            backdrop-filter: blur(4px); /* Легкое размытие заднего плана */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 6px;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .lightbox-overlay.active .lightbox-img {
+            transform: scale(1);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: 300;
+            cursor: pointer;
+            user-select: none;
+            line-height: 1;
+        }
+
         /* Адаптивность для мобильных устройств */
         @media (max-width: 768px) {
             .ui-table-row {
@@ -544,9 +596,9 @@
 
     <div class="ui-table-container">
         
-<div class="ui-table-row">
+        <div class="ui-table-row">
             <div class="ui-image-box">
-                <img src="images/electricity.png" alt="Pörssisähkö-widget">
+                <img src="images/electricity.png" alt="Pörssisähkö-widget" class="zoomable">
             </div>
             <div class="ui-text-box">
                 <strong>Pörssisähkön hintatiedot</strong><br>
@@ -564,8 +616,8 @@
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <div class="ui-image-group">
-                    <img src="images/safety_ok.png" alt="Turvallisuus OK">
-                    <img src="images/safety_alarm.png" alt="Turvallisuus Hälytys">
+                    <img src="images/safety_ok.png" alt="Turvallisuus OK" class="zoomable">
+                    <img src="images/safety_alarm.png" alt="Turvallisuus Hälytys" class="zoomable">
                 </div>
             </div>
             <div class="ui-text-box">
@@ -579,7 +631,7 @@
 
         <div class="ui-table-row">
             <div class="ui-image-box">
-                <img src="images/weather.png" alt="Sää-widget">
+                <img src="images/weather.png" alt="Sää-widget" class="zoomable">
             </div>
             <div class="ui-text-box">
                 <strong>Sää-widget</strong><br>
@@ -589,7 +641,7 @@
 
         <div class="ui-table-row">
             <div class="ui-image-box">
-                <img src="images/weather_plot.png" alt="Sääanalysi graafi">
+                <img src="images/weather_plot.png" alt="Sääanalysi graafi" class="zoomable">
             </div>
             <div class="ui-text-box">
                 <strong>Historiatiedot ja analytiikkakaaviot</strong><br>
@@ -601,6 +653,50 @@
         </div>
 
     </div>
+
+    <div id="uiLightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" src="" alt="Suurennettu kuva">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = document.getElementById('uiLightbox');
+            const lightboxImg = lightbox.querySelector('.lightbox-img');
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+            const zoomableImages = document.querySelectorAll('.zoomable');
+
+            // Открытие при клике на картинку
+            zoomableImages.forEach(img => {
+                img.addEventListener('click', function () {
+                    lightboxImg.src = this.src;
+                    lightboxImg.alt = this.alt;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Отключаем прокрутку сайта на фоне
+                });
+            });
+
+            // Закрытие при клике на крестик или фон
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = ''; // Возвращаем прокрутку
+                setTimeout(() => { lightboxImg.src = ''; }, 300); // Очищаем путь после анимации
+            }
+
+            lightbox.addEventListener('click', function (e) {
+                if (e.target !== lightboxImg) {
+                    closeLightbox();
+                }
+            });
+
+            // Закрытие по кнопке Esc
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
 </section>
 
     <!-- БЛОК 5: КОНТАКТЫ (БЫВШИЙ 4) -->
