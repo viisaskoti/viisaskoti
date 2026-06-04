@@ -61,7 +61,7 @@
         }
         h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
         
-        /* Глобальное выравнивание текстов по ширине */
+        /* Globaali tekstien tasaus */
         p, li {
             text-align: justify;
         }
@@ -93,7 +93,7 @@
             margin-top: 15px;
         }
 
-        /* Стили для выпадающих списков (Аккордеон) */
+        /* Harmonikka-valikon tyylit (Accordion) */
         .accordion-item {
             background: #fff;
             border-radius: 8px;
@@ -118,7 +118,7 @@
             padding: 0 20px 20px 20px;
         }
         
-        /* Цвета границ для каждого раскрывающегося блока */
+        /* Reunojen värit eri harmonikkalohkoille */
         .border-red { border-left: 4px solid #ef4444; }
         .border-red summary { color: #ef4444; }
         
@@ -131,7 +131,7 @@
         .border-blue { border-left: 4px solid #3b82f6; }
         .border-blue summary { color: #3b82f6; }
 
-        /* Кнопка управления всеми списками */
+        /* Kaikkien osioiden hallintapainike */
         .toggle-all-btn {
             display: inline-block;
             background-color: #cbd5e1;
@@ -153,6 +153,7 @@
 </head>
 <body>
 
+    <!-- NAVIGOINTIPALKKI (Ylävalikko) -->
     <nav>
         <ul>
             <li><a href="#ongelmat">Mitä Voimme Ratkaista?</a></li>
@@ -162,6 +163,7 @@
         </ul>
     </nav>
 
+    <!-- HERO-SEKTIO (Pääotsikko ja esittely) -->
     <div class="hero">
         <h1>Viisas koti, joka toimii aina</h1>
         
@@ -183,6 +185,7 @@
         <a href="#yhteystiedot" class="cta-button">Pyydä ilmainen konsultaatio</a>
     </div>
 
+    <!-- SEKTIO 1: MITÄ VOIMME RATKAISTA (Ongelmat ja ratkaisut harmonikkavalikossa) -->
     <section id="ongelmat" style="margin-bottom: 50px;">
         <h2>1. Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
         <p style="text-indent: 25px; margin-bottom: 25px;">Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:</p>
@@ -232,31 +235,56 @@
             </div>
         </details>
 
+        <!-- Infoboksi kuukausimaksuista -->
         <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px; margin-bottom: 25px; text-align: center;">
             <span style="font-size: 1.3rem; display: block; margin-bottom: 5px;">📱 <strong>Ei kuukausimaksuja tai piilokuluja</strong></span>
             <p style="margin: 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
-                Kahta älykkäät ilmoitukset, automaatiot ja puhelinohjaus toimivat <strong>täysin ilman maksullisia tilauksia tai sitoutumista</strong>. Järjestelmä on sinun omasi. Mobiili-ilmoitusten vastaanottamiseen tarvitaan vain normaali internet-yhteys, joka kodistasi todennäköisesti jo löytyy.
+                Kaikki älykkäät ilmoitukset, automaatiot ja puhelinohjaus toimivat <strong>täysin ilman maksullisia tilauksia tai sitoutumista</strong>. Järjestelmä on sinun omasi. Mobiili-ilmoitusten vastaanottamiseen tarvitaan vain normaali internet-yhteys, joka kodistasi todennäköisesti jo löytyy.
             </p>
         </div>
 
         <img class="section-img" src="https://picsum.photos/800/400?random=1" alt="Älykäs koti turvallisuus" style="display: block; margin: 0 auto; border-radius: 6px;">
     </section>
 
+    <!-- SEKTIO 2: MITEN RATKAISUMME EROAA (Edut ja teknologiat – päivitetty lista minipodotsikoilla) -->
     <section id="miksi-me" style="margin-bottom: 50px;">
         <h2>2. Miten ratkaisumme eroaa muista?</h2>
         <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – vapautta pilvipalveluista ja täyttä laitariippumattomuutta.</p>
 
+        <!-- Päivitetty lista: Mini-podotsikot erotettu tekstistä omille riveilleen -->
         <div style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); margin-bottom: 25px;">
-            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.7;">
-                <li style="margin-bottom: 12px;">
-                    <strong>Täysin paikallinen hallinta:</strong> Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, jos haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
+            <ul style="margin: 0; padding-left: 0; list-style: none; color: #475569; line-height: 1.7;">
+                
+                <!-- Kohta 1 -->
+                <li style="margin-bottom: 22px;">
+                    <span style="display: block; font-size: 1.1rem; color: #2c3e50; font-weight: bold; margin-bottom: 6px;">
+                        🌐 Täysin paikallinen hallinta
+                    </span>
+                    <p style="margin: 0; text-align: justify;">
+                        Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, jos haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
+                    </p>
                 </li>
-                <li style="margin-bottom: 12px;">
-                    <strong>Ei riippuvuutta pilvipalveluista:</strong> Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Если нетти каткеаа или пилви катуу, ярјестелма лаккаа тоимаста. Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa – mutta jos haluat, järjestelmään voidaan määrittää <strong>turvallinen etäyhteys ulkomaailmasta</strong>.
+                
+                <!-- Kohta 2 -->
+                <li style="margin-bottom: 22px;">
+                    <span style="display: block; font-size: 1.1rem; color: #2c3e50; font-weight: bold; margin-bottom: 6px;">
+                        ☁️ Ei riippuvuutta pilvipalveluista
+                    </span>
+                    <p style="margin: 0; text-align: justify;">
+                        Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta. Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa – mutta jos haluat, järjestelmään voidaan määrittää <strong>turvallinen etäyhteys ulkomaailmasta</strong>.
+                    </p>
                 </li>
-                <li>
-                    <strong>Riippumattomuus laitevalmistajista (Vapaus valita):</strong> Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan edullisempaan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
+                
+                <!-- Kohta 3 -->
+                <li style="margin-bottom: 0;">
+                    <span style="display: block; font-size: 1.1rem; color: #2c3e50; font-weight: bold; margin-bottom: 6px;">
+                        🔌 Riippumattomuus laitevalmistajista (Vapaus valita)
+                    </span>
+                    <p style="margin: 0; text-align: justify;">
+                        Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan edullisempaan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
+                    </p>
                 </li>
+
             </ul>
         </div>
 
@@ -277,6 +305,7 @@
         <img class="section-img" src="https://picsum.photos/800/400?random=2" alt="Paikallinen älykäs koti" style="display: block; margin: 0 auto; border-radius: 6px;">
     </section>
 
+    <!-- SEKTIO 3: HINNASTO (Laitteet ja Palvelut -taulukot) -->
     <section id="hinnasto">
         <h2>3. Palvelun hinta</h2>
         <p style="text-indent: 25px;">Maksat vain laitteista ja asennuksesta – ei sitovia sopimuksia tai jatkuvia kuukausimaksuja.</p>
@@ -297,7 +326,7 @@
                     <td style="padding: 12px; width: 80px;"><img src="images/oh_server.svg" alt="Palvelin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
                     <td style="padding: 12px;">
                         <strong>Keskusyksikkö / Palvelin (Valmis paketti)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Järjestelmän aivot, toimii täysin paikallisesti ilman pilveä. Sisältää energiatehokkaan prosessorin, muistin ja nopean SSD-tallennustilan.</small>
+                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Järjestelmän aivot, toimii täysin paikallisestai ilman pilveä. Sisältää energiatehokkaan prosessorin, muistin ja nopean SSD-tallennustilan.</small>
                         
                         <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
                             <span style="font-weight: 600;">Säästövinkki:</span> Jos sinulla on jo sopiva tietokone (vähintään 4 Gt RAM / 128 Gt SSD), voimme asentaa Viisas Koti -järjestelmän siihen. Tällöin säästät uuden laitteen hankintakustannuksen kokonaan.
@@ -378,13 +407,14 @@
         </table>
     </section>
 
+    <!-- SEKTIO 4: YHTEYSTIEDOT (Meistä-kuvaus ja yhteydenottolomake/painikkeet) -->
     <section id="yhteystiedot" style="margin-bottom: 50px;">
         <h2>4. Keitä olemme ja ota yhteyttä</h2>
         
         <div style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); margin-bottom: 30px;">
             <h3 style="margin-top: 0; color: #1e293b;">4.1 Keitä olemme?</h3>
             <p style="color: #475569; line-height: 1.7; margin-bottom: 0;">
-                Olemme dynaaminen ja kunnianhimoinen tiimi, jolla on <strong>yli 10 vuoden vankka kokemus ja erikoisosaaminen</strong> vaativasta teollisuusautomaatiosta ja suunnittelusta. Olemme uramme aikana toteuttaneet laajojen ja monimutkaisten kohteiden, kuten kauppakeskusten, lämpövoimalaitosten (CHP) ja jopa vesivoimaloiden, <strong>automaatio- ja ohjausjärjestelmiä</strong>. Tämän vahvan teollisuustason asiantuntemuksen ja parhaat tekniset käytännöt tuomme nyt sinun kotisi, mökkisi tai toimitilasi hyödynnettäväksi. Suunnittelemme ja toteutamme järjestelmän <strong>ehdottomasti asiakkaan toiveiden mukaisesti</strong> – tarjoamalla juuri sitä mitä haluat, optimaaliseen hintaan ja tinkimättömällä laadulla ilman turhaa monimutkaisuutta.
+                Olemme dynaaminen ja kunnianhimoinen tiimi, jolla on <strong>yli 10 vuoden vankka kokemus ja erikoisosaaminen</strong> vaativasta teollisuusautomaatiosta ja suunnittelusta. Olemme uramme aikana toteuttaneet laajojen ja monimutkaisten kohteiden, kuten kauppakeskusten, lämpövoimalaitosten (CHP) ja japa vesivoimaloiden, <strong>automaatio- ja ohjausjärjestelmiä</strong>. Tämän vahvan teollisuustason asiantuntemuksen ja parhaat tekniset käytännöt tuomme nyt sinun kotisi, mökkisi tai toimitilasi hyödynnettäväksi. Suunnittelemme ja toteutamme järjestelmän <strong>ehdottomasti asiakkaan toiveiden mukaisesti</strong> – tarjoamalla juuri sitä mitä haluat, optimaaliseen hintaan ja tinkimättömällä laadulla ilman turhaa monimutkaisuutta.
             </p>
         </div>
 
@@ -407,12 +437,13 @@
         </div>
     </section>
 
+    <!-- SCRIPTIT (Harmonikkavalikon toiminnallisuus) -->
     <script>
         function toggleAllSections() {
             const items = document.querySelectorAll('.accordion-item');
             const btn = document.getElementById('toggleAllBtn');
             
-            // Проверяем, открыт ли хотя бы один блок
+            // Tarkistetaan onko vähintään yksi osio auki
             let anyOpen = false;
             items.forEach(item => {
                 if (item.hasAttribute('open')) {
@@ -421,11 +452,11 @@
             });
 
             if (anyOpen) {
-                // Если что-то открыто — закрываем всё
+                // Jos jokin on auki – suljetaan kaikki
                 items.forEach(item => item.removeAttribute('open'));
                 btn.textContent = "Avaa kaikki osiot";
             } else {
-                // Если всё закрыто — открываем всё
+                // Jos kaikki ovat kiinni – avataan kaikki
                 items.forEach(item => item.setAttribute('open', 'true'));
                 btn.textContent = "Sulje kaikki osiot";
             }
