@@ -308,61 +308,89 @@
         <img class="section-img" src="https://picsum.photos/800/400?random=1" alt="Älykäs koti turvallisuus" style="display: block; margin: 0 auto; border-radius: 6px;">
     </section>
 
-    <section id="miksi-me" style="margin-bottom: 50px;">
-        <h2>2. Miten ratkaisumme eroaa muista?</h2>
-        <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – vapautta pilvipalveluista ja täyttä laitariippumattomuutta.</p>
+<section id="miksi-me" style="margin-bottom: 50px;">
+    <h2>2. Miten ratkaisumme eroaa muista?</h2>
+    <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – vapautta pilvipalveluista ja täyttä laitariippumattomuutta.</p>
 
-        <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Avaa kaikki osiot</button>
+    <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Avaa kaikki osiot</button>
 
-        <div id="section2-accordions" style="margin-bottom: 25px;">
-             
-            <details class="accordion-item border-blue">
-                <summary>🌐 Täysin paikallinen hallinta</summary>
-                <div class="accordion-content">
-                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                        Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, hvis haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
-                    </p>
-                </div>
-            </details>
-             
-            <details class="accordion-item border-blue">
-                <summary>☁️ Ei riippuvuutta pilvipalveluista</summary>
-                <div class="accordion-content">
-                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                        Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta. Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa – mutta jos haluat, järjestelmään voidaan määrittää <strong>turvallinen etäyhteys ulkomaailmasta</strong>.
-                    </p>
-                </div>
-            </details>
-             
-            <details class="accordion-item border-blue">
-                <summary>🔌 Riippumattomuus laitevalmistajista (Vapaus valita)</summary>
-                <div class="accordion-content">
-                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                        Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan edullisempaan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
-                    </p>
-                </div>
-            </details>
+    <!-- АККОРДЕОНЫ (Все 3 важных тезиса полностью сохранены) -->
+    <div id="section2-accordions" style="margin-bottom: 25px;">
+         
+        <details class="accordion-item border-blue">
+            <summary>🌐 Täysin paikallinen hallinta</summary>
+            <div class="accordion-content">
+                <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                    Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, <strong>jos</strong> haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
+                </p>
+            </div>
+        </details>
+         
+        <details class="accordion-item border-blue">
+            <summary>☁️ Ei riippuvuutta pilvipalveluista</summary>
+            <div class="accordion-content">
+                <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                    Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta. Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa – mutta jos haluat, järjestelmään voidaan määrittää <strong>turvallinen etäyhteys ulkomaailmasta</strong>.
+                </p>
+            </div>
+        </details>
+         
+        <details class="accordion-item border-blue">
+            <summary>🔌 Riippumattomuus laitevalmistajista (Vapaus valita)</summary>
+            <div class="accordion-content">
+                <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                    Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan edullisempaan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
+                </p>
+            </div>
+        </details>
 
-        </div>
+    </div>
 
-        <h3>Luotettavat teknologiat ilman remonttihuolia</h3>
-        <p style="text-indent: 25px; margin-bottom: 20px;">Käytämme moderneja standardeja, jotka sopivat niin valmiisiin koteihin kuin uusiin rakennusprojekteihin:</p>
+    <!-- ТЕХНОЛОГИЧЕСКИЙ БЛОК (Интегрирован openHAB, Zigbee и таблица преимуществ) -->
+    <h3>Luotettavat teknologiat ilman remonttihuolia</h3>
+    <p style="text-indent: 25px; margin-bottom: 20px;">
+        Ratkaisumme perustuu avoimen lähdekoodin <strong>openHAB-alustaan</strong> ja luotettavaan langattomaan <strong>Zigbee-teknologiaan</strong>. Tämä yhdistelmä takaa täyden tietoturvan, paikallisen toiminnan ilman pilviriippuvuutta sekä asennuksen ilman suuria kaapelointitöitä tai seinien piikkausta.
+    </p>
 
-        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 25px;">
-            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.7; list-style-type: disc;">
-                <li style="margin-bottom: 15px; display: flex; flex-direction: column;">
-                    <strong>Ei seinien piikkausta tai suuria kaapelointitöitä:</strong>
-                    <span>Hyödynnämme testattuja ja turvallisia langattomia teknologioita (kuten <strong>Zigbee</strong> tai <strong>Matter</strong>). Useimmat sensorit ja laitteet toimivat paristoilla tai akuilla vuosia, joten kaapeleita ei tarvitse vetää lainkaan. Laitteiden asennus ei vaadi seinien jyrsintää, eikä se vaikuta jo tehtyyn remonttiin. Huomioithan kuitenkin, että tietyt järjestelmät tai ohjausyksiköt (kuten järeämmät venttiilimoottorit tai erikoisreleet) saattavat vaatia paikallisen virransyötön tai kaapelin.</span>
-                </li>
-                <li style="display: flex; flex-direction: column;">
-                    <strong>Valmius ammattitason järjestelmiin:</strong>
-                    <span>Tarvittaessa voimme integroida järjestelmään myös teollisuus- ja automaatiostandardeja, kuten <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong> tai <strong>LonWorks</strong>. Järjestelmä mukautuu aina kohteen vaatimuksiin.</span>
-                </li>
-            </ul>
-        </div>
+    <div style="background: #f8fafc; padding: 10px 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 25px;">
+        <table style="width: 100%; border-collapse: collapse; background: transparent;">
+            <tbody>
+                <!-- 1. Беспроводные стандарты -->
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                    <td style="padding: 15px 0; width: 35%; vertical-align: top;">
+                        <strong>Moderni langaton vapaus</strong>
+                    </td>
+                    <td style="padding: 15px 0 15px 15px; color: #475569; font-size: 0.95rem;">
+                        Käytämme ensisijaisesti <strong>Zigbee</strong>- ja <strong>Matter</strong>-standardeja. Useimmat sensorit toimivat paristoilla vuosia, joten kaapeleita ei tarvitse vetää, eikä asennus vaikuta jo tehtyyn remonttiin. 
+                        <br><small style="color: #64748b; display: block; margin-top: 5px;">*Huom: tietyt laitteet (kuten venttiilimoottorit tai järeät releet) saattavat vaatia paikallisen virransyötön.</small>
+                    </td>
+                </tr>
+                
+                <!-- 2. Промышленные протоколы -->
+                <tr style="border-bottom: 1px solid #e2e8f0;">
+                    <td style="padding: 15px 0; vertical-align: top;">
+                        <strong>Valmius ammattitason järjestelmiin</strong>
+                    </td>
+                    <td style="padding: 15px 0 15px 15px; color: #475569; font-size: 0.95rem;">
+                        Järjestelmä mukautuu vaativiinkin kohteisiin. Voimme integroida ratkaisuun myös teollisuus- ja automaatiostandardeja, kuten <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong> tai <strong>LonWorks</strong>.
+                    </td>
+                </tr>
+                
+                <!-- 3. Кастомная разработка под спец. железо -->
+                <tr>
+                    <td style="padding: 15px 0; vertical-align: top;">
+                        <strong>Räätälöity laitetuki</strong>
+                    </td>
+                    <td style="padding: 15px 0 0 15px; color: #475569; font-size: 0.95rem;">
+                        Onko kohteessasi erikoislaitteita? Tarvittaessa olemme valmiita kehittämään kustomoidun ohjelmistomoduulin juuri sinun spesifistä laitettasi varten, jotta se saadaan osaksi yhtenäistä automaatiota.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <img class="section-img" src="https://picsum.photos/800/400?random=2" alt="Paikallinen älykäs koti" style="display: block; margin: 0 auto; border-radius: 6px;">
-    </section>
+    <img class="section-img" src="https://picsum.photos/800/400?random=2" alt="Paikallinen älykäs koti" style="display: block; margin: 0 auto; border-radius: 6px;">
+</section>
 
     <section id="hinnasto" style="margin-bottom: 50px;">
         <h2>3. Palvelun hinta</h2>
