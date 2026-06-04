@@ -153,7 +153,6 @@
 </head>
 <body>
 
-    <!-- NAVIGOINTIPALKKI (Ylävalikko) -->
     <nav>
         <ul>
             <li><a href="#ongelmat">Mitä Voimme Ratkaista?</a></li>
@@ -163,7 +162,6 @@
         </ul>
     </nav>
 
-    <!-- HERO-SEKTIO (Pääotsikko ja esittely) -->
     <div class="hero">
         <h1>Viisas koti, joka toimii aina</h1>
         
@@ -185,12 +183,11 @@
         <a href="#yhteystiedot" class="cta-button">Pyydä ilmainen konsultaatio</a>
     </div>
 
-    <!-- SEKTIO 1: MITÄ VOIMME RATKAISTA (Ongelmat ja ratkaisut harmonikkavalikossa) -->
     <section id="ongelmat" style="margin-bottom: 50px;">
         <h2>1. Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
         <p style="text-indent: 25px; margin-bottom: 25px;">Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:</p>
         
-        <button class="toggle-all-btn" id="toggleAllBtn" onclick="toggleAllSections()">Avaa kaikki osiot</button>
+        <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()">Avaa kaikki osiot</button>
 
         <details class="accordion-item border-red">
             <summary>💧 Vesivahinkojen estäminen (Vuotovahti)</summary>
@@ -235,7 +232,6 @@
             </div>
         </details>
 
-        <!-- Infoboksi kuukausimaksuista -->
         <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px; margin-bottom: 25px; text-align: center;">
             <span style="font-size: 1.3rem; display: block; margin-bottom: 5px;">📱 <strong>Ei kuukausimaksuja tai piilokuluja</strong></span>
             <p style="margin: 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
@@ -246,15 +242,14 @@
         <img class="section-img" src="https://picsum.photos/800/400?random=1" alt="Älykäs koti turvallisuus" style="display: block; margin: 0 auto; border-radius: 6px;">
     </section>
 
-    <!-- SEKTIO 2: MITEN RATKAISUMME EROAA (Edut ja teknologiat – päivitetty lista minipodotsikoilla) -->
     <section id="miksi-me" style="margin-bottom: 50px;">
         <h2>2. Miten ratkaisumme eroaa muista?</h2>
         <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – vapautta pilvipalveluista ja täyttä laitariippumattomuutta.</p>
 
-<!-- Edut ja ominaisuudet kauniina harmonikkavalikkona -->
-        <div style="margin-bottom: 25px;">
+        <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Avaa kaikki osiot</button>
+
+        <div id="section2-accordions" style="margin-bottom: 25px;">
             
-            <!-- Kohta 1 -->
             <details class="accordion-item border-blue">
                 <summary>🌐 Täysin paikallinen hallinta</summary>
                 <div class="accordion-content">
@@ -264,7 +259,6 @@
                 </div>
             </details>
             
-            <!-- Kohta 2 -->
             <details class="accordion-item border-blue">
                 <summary>☁️ Ei riippuvuutta pilvipalveluista</summary>
                 <div class="accordion-content">
@@ -273,193 +267,3 @@
                     </p>
                 </div>
             </details>
-            
-            <!-- Kohta 3 -->
-            <details class="accordion-item border-blue">
-                <summary>🔌 Riippumattomuus laitevalmistajista (Vapaus valita)</summary>
-                <div class="accordion-content">
-                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                        Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan edullisempaan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
-                    </p>
-                </div>
-            </details>
-
-        </div>
-
-        <h3>Luotettavat teknologiat ilman remonttihuolia</h3>
-        <p style="text-indent: 25px; margin-bottom: 20px;">Käytämme moderneja standardeja, jotka sopivat niin valmiisiin koteihin kuin uusiin rakennusprojekteihin:</p>
-
-        <div style="background: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 25px;">
-            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.7;">
-                <li style="margin-bottom: 10px;">
-                    <strong>Ei seinien piikkausta tai kaapelointia:</strong> Hyödynnämme testattuja ja turvallisia langattomia teknologioita (kuten esimerkiksi <strong>Zigbee</strong> tai <strong>Matter</strong>). Laitteiden asennus ei vaadi seinien jyrsintää tai sähkökaapelien vetoa, joten se ei vaikuta millään tavalla kodissasi jo tehtyyn remonttiin.
-                </li>
-                <li>
-                    <strong>Valmius ammattitason järjestelmiin:</strong> Tarvittaessa voimme integroida järjestelmään myös teollisuus- ja automaatiostandardeja, kuten <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong> tai <strong>LonWorks</strong>. Järjestelmä mukautuu aina kohteen vaatimuksiin.
-                </li>
-            </ul>
-        </div>
-
-        <img class="section-img" src="https://picsum.photos/800/400?random=2" alt="Paikallinen älykäs koti" style="display: block; margin: 0 auto; border-radius: 6px;">
-    </section>
-
-    <!-- SEKTIO 3: HINNASTO (Laitteet ja Palvelut -taulukot) -->
-    <section id="hinnasto">
-        <h2>3. Palvelun hinta</h2>
-        <p style="text-indent: 25px;">Maksat vain laitteista ja asennuksesta – ei sitovia sopimuksia tai jatkuvia kuukausimaksuja.</p>
-        
-        <h3>3.1 Laitteet (Esimerkkejä)</h3>
-        <p style="text-indent: 25px; margin-bottom: 20px;">Hankimme kaikki tarvittavat laitteet puolestasi <strong>suoraan omakustannushintaan ilman lisämaksuja</strong>. Kaikki alla olevat hinnat sisältävät arvonlisäveron (sis. ALV 25,5 %). Maksat vain itse laitteista ja asennustyöstä. Tässä on esimerkkejä komponenteista:</p>
-        
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 40px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
-            <thead>
-                <tr style="background-color: #f1f5f9; border-bottom: 2px solid #cbd5e1; text-align: left;">
-                    <th style="padding: 12px; font-weight: 600;">Kuva</th>
-                    <th style="padding: 12px; font-weight: 600;">Laite</th>
-                    <th style="padding: 12px; font-weight: 600; text-align: right;">Arvioitu hinta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/oh_server.svg" alt="Palvelin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Keskusyksikkö / Palvelin (Valmis paketti)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Järjestelmän aivot, toimii täysin paikallisestai ilman pilveä. Sisältää energiatehokkaan prosessorin, muistin ja nopean SSD-tallennustilan.</small>
-                        
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            <span style="font-weight: 600;">Säästövinkki:</span> Jos sinulla on jo sopiva tietokone (vähintään 4 Gt RAM / 128 Gt SSD), voimme asentaa Viisas Koti -järjestelmän siihen. Tällöin säästät uuden laitteen hankintakustannuksen kokonaan.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">Noin €350</td>
-                </tr>
-
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/coordinator.png" alt="Koordinaattori" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Langaton koordinaattori (USB-dongle)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Välttämätön laite, joka luo vakaan ja turvallisen paikallisen verkkoalustan kaikkien kodin sensorien liittämiseksi järjestelmään.</small>
-                        
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            <span style="font-weight: 600;">Asiakkaan etu:</span> Voit hankkia yhteensopivan USB-sovittimen (esim. Sonoff Zigbee Dongle) myös itse haluamastasi kaupasta. Otamme sen mielellämme käyttöön asennuksessa, jolloin säästät laitteen hinnan meiltä ostettuna.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">Noin €25*<br><small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">+ toimituskulut</small></td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/sensors.jpg" alt="Älylaitteet" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Langattomat älylaitteet ja sensorit</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Kodin tarpeiden mukaan valittavat komponentit: vesivuotovahdit, älypistorasiat, lampunohjaimet sekä ovi- ja lämpötilatunnistimet.</small>
-                        
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            <span style="font-weight: 600;">Joustavuus:</span> Voit valita laitteet laajasta valikoimasta budjettisi mukaan. Kuten muidenkin laitteiden kohdalla, voit hankkia yhteensopivat sensorit myös itse suoraan kaupasta – me hoidamme niiden liittämisen ja automaation.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">Alkaen €10 / kpl<br><small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kappale</small></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>3.2 Palvelut</h3>
-        <p style="text-indent: 25px;">Tarjoamme täyden palvelun avaimet käteen -periaatteella. Hinnat sisältävät arvonlisäveron (sis. ALV 25,5 %):</p>
-
-        <table style="width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
-            <thead>
-                <tr style="background-color: #f1f5f9; border-bottom: 2px solid #cbd5e1; text-align: left;">
-                    <th style="padding: 12px; font-weight: 600;">Palvelu</th>
-                    <th style="padding: 12px; font-weight: 600; text-align: right; width: 170px;">Hinta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px;"><strong>Esittely ja demojärjestelmä</strong><br><small style="color: #64748b;">Tulemme paikan päälle ja näytämme, miten todellinen järjestelmä toimii käytännössä.</small></td>
-                    <td style="padding: 15px; text-align: right; color: #10b981; font-weight: bold; white-space: nowrap;">ILMAINEN</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px;"><strong>Suunnittelu ja tarvekartoitus</strong><br><small style="color: #64748b;">Räätälöidyn automaatioprojektin ja laitelistan laatiminen sinun tarpeidesi pohjalta.</small></td>
-                    <td style="padding: 15px; text-align: right; color: #10b981; font-weight: bold; white-space: nowrap;">ILMAINEN</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px;"><strong>Asennus, käyttöönotto ja opastus</strong><br><small style="color: #64748b;">Laitteiden fyysinen asennus, ohjelmointi ja järjestelmän käytön opettaminen.</small></td>
-                    <td style="padding: 15px; text-align: right; font-weight: 600; color: #3b82f6; white-space: nowrap;">Kohteen mukaan</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px;">
-                        <strong>Käyttöliittymän perusräätälöinti</strong><br>
-                        <small style="color: #64748b;">Hallintapaneelin ja widgettien muokkaus valmiiden testattujen pohjiemme mukaan TAI asiakkaan toimittamien kuvakkeiden/pohjakuvien käyttö (edellyttää vaatimusten täyttymistä).</small>
-                    </td>
-                    <td style="padding: 15px; text-align: right; color: #10b981; font-weight: bold; white-space: nowrap; vertical-align: middle;">ILMAINEN</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px;">
-                        <strong>Käyttöliittymän laajennettu graafinen suunnittelu</strong><br>
-                        <small style="color: #64748b;">Täysin uniikkien graafisten elementtien, personoitujen widgettien tai talon pohjakuvien luominen alusta alkaen asiakkaan erityistoiveiden mukaisesti.</small>
-                    </td>
-                    <td style="padding: 15px; text-align: right; font-weight: 600; color: #3b82f6; white-space: nowrap; vertical-align: middle;">Sopimuksen mukaan</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px;"><strong>Jälkihoito ja laajennussuunnittelu</strong><br><small style="color: #64748b;">Tuki asennuksen jälkeen sekä suunnitelmat järjestelmän laajentamiseksi tulevaisuudessa.</small></td>
-                    <td style="padding: 15px; text-align: right; color: #10b981; font-weight: bold; white-space: nowrap;">ILMAINEN</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- SEKTIO 4: YHTEYSTIEDOT (Meistä-kuvaus ja yhteydenottolomake/painikkeet) -->
-    <section id="yhteystiedot" style="margin-bottom: 50px;">
-        <h2>4. Keitä olemme ja ota yhteyttä</h2>
-        
-        <div style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); margin-bottom: 30px;">
-            <h3 style="margin-top: 0; color: #1e293b;">4.1 Keitä olemme?</h3>
-            <p style="color: #475569; line-height: 1.7; margin-bottom: 0;">
-                Olemme dynaaminen ja kunnianhimoinen tiimi, jolla on <strong>yli 10 vuoden vankka kokemus ja erikoisosaaminen</strong> vaativasta teollisuusautomaatiosta ja suunnittelusta. Olemme uramme aikana toteuttaneet laajojen ja monimutkaisten kohteiden, kuten kauppakeskusten, lämpövoimalaitosten (CHP) ja japa vesivoimaloiden, <strong>automaatio- ja ohjausjärjestelmiä</strong>. Tämän vahvan teollisuustason asiantuntemuksen ja parhaat tekniset käytännöt tuomme nyt sinun kotisi, mökkisi tai toimitilasi hyödynnettäväksi. Suunnittelemme ja toteutamme järjestelmän <strong>ehdottomasti asiakkaan toiveiden mukaisesti</strong> – tarjoamalla juuri sitä mitä haluat, optimaaliseen hintaan ja tinkimättömällä laadulla ilman turhaa monimutkaisuutta.
-            </p>
-        </div>
-
-        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <h3 style="margin-top: 0; color: #1e293b; text-align: center;">4.2 Ota yhteyttä</h3>
-            <p style="text-align: center; color: #475569; margin-bottom: 20px;">
-                Haluatko tehdä kodistasi älykkäämmän, säästää sähkölaskuissa tai varmistaa turvallisuuden? Kysy rohkeasti lisää, pohditaan ratkaisua yhdessä tai pyydä suoraan tarjous!
-            </p>
-            
-            <div style="max-width: 350px; margin: 0 auto 25px auto; color: #334155; font-size: 1.05rem; line-height: 1.8;">
-                ✉️ <strong>Sähköposti:</strong> <a href="mailto:sinun.posti@domain.fi" style="color: #3b82f6; text-decoration: none;">sinun.posti@domain.fi</a><br>
-                📞 <strong>Puhelin / WhatsApp:</strong> +358 XX XXX XXXX
-            </div>
-
-            <p style="text-align: center; margin: 0;">
-                <a href="https://wa.me/358XXXXXXXXX" class="cta-button" style="background-color: #25D366; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    Lähetä viesti WhatsAppissa
-                </a>
-            </p>
-        </div>
-    </section>
-
-    <!-- SCRIPTIT (Harmonikkavalikon toiminnallisuus) -->
-    <script>
-        function toggleAllSections() {
-            const items = document.querySelectorAll('.accordion-item');
-            const btn = document.getElementById('toggleAllBtn');
-            
-            // Tarkistetaan onko vähintään yksi osio auki
-            let anyOpen = false;
-            items.forEach(item => {
-                if (item.hasAttribute('open')) {
-                    anyOpen = true;
-                }
-            });
-
-            if (anyOpen) {
-                // Jos jokin on auki – suljetaan kaikki
-                items.forEach(item => item.removeAttribute('open'));
-                btn.textContent = "Avaa kaikki osiot";
-            } else {
-                // Jos kaikki ovat kiinni – avataan kaikki
-                items.forEach(item => item.setAttribute('open', 'true'));
-                btn.textContent = "Sulje kaikki osiot";
-            }
-        }
-    </script>
-
-</body>
-</html>
