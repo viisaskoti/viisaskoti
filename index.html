@@ -246,7 +246,7 @@
         </ul>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="hero-bg">
         <h1>Viisas koti, johon voit luottaa</h1>
          
         <!-- Уменьшили font-size с 1.2rem до 1.05rem и margin-bottom для компактности -->
@@ -1183,6 +1183,29 @@
             }
         }
     </script>
+<a href="#yhteystiedot" class="cta-button">Pyydä ilmainen konsultaatio</a>
+    </div>
 
+    <!-- Скрипт для случайной смены фонов Оулу от 01 до 07 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const totalImages = 7; // Количество картинок (01-07)
+            const randomNumber = Math.floor(Math.random() * totalImages) + 1;
+            
+            // Превращает числа 1, 2... в строки "01", "02"
+            const formattedNumber = randomNumber.toString().padStart(2, '0');
+            
+            // Путь к вашим новым WebP файлам в подпапке hero
+            const randomImageUrl = `images/hero/city_bg_${formattedNumber}.webp`;
+            
+            const heroElement = document.getElementById('hero-bg');
+            if (heroElement) {
+                // Подставляем случайную картинку, сохраняя красивое темное затемнение
+                heroElement.style.backgroundImage = `linear-gradient(rgba(34, 49, 63, 0.92), rgba(34, 49, 63, 0.92)), url('${randomImageUrl}')`;
+            }
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
