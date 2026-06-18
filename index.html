@@ -18,8 +18,7 @@
 
     <!-- SEO: Language current page -->
     <link rel="alternate" hreflang="fi" href="https://viisaskoti.github.io/viisaskoti/index.html" />
-
-    <style>
+<style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             line-height: 1.7;
@@ -82,14 +81,17 @@
             text-decoration: underline;
         }
 
+        /* Обновленный компактный Hero-блок с еле заметным фото (8% видимости) */
         .hero {
-            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), url('https://picsum.photos/1200/600?random=10') no-repeat center center/cover;
+            background: linear-gradient(rgba(34, 49, 63, 0.92), rgba(34, 49, 63, 0.92)), url('https://picsum.photos/1200/600?random=10') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 140px 20px 80px 20px;
+            padding: 105px 20px 45px 20px; /* Существенно уменьшили высоту */
         }
-        .hero h1 { margin: 0 0 20px 0; font-size: 2.5em; }
-        .hero p { font-size: 1.2em; max-width: 600px; margin: 0 auto 30px auto; }
+        .hero h1 { 
+            margin: 0 0 15px 0; 
+            font-size: 2.2em; 
+        }
          
         section {
             padding: 60px 20px;
@@ -120,7 +122,7 @@
             background-color: #27ae60;
             color: white;
             text-decoration: none;
-            padding: 12px 30px;
+            padding: 10px 25px; /* Сделали кнопку чуть компактнее */
             border-radius: 25px;
             font-weight: bold;
             transition: background 0.3s;
@@ -227,12 +229,13 @@
 
     <nav>
         <ul>
-            <li><a href="#ongelmat">Mitä Voimme Ratkaista?</a></li>
-            <li><a href="#miksi-me">Miten Ratkaisumme Eroaa?</a></li>
+            <!-- Короткие и лаконичные пункты меню -->
+            <li><a href="#ongelmat">Ratkaisut</a></li>
+            <li><a href="#miksi-me">Edut</a></li>
             <li><a href="#hinnasto">Hinnasto</a></li>
             <li><a href="#kayttoliittyma">Käyttöliittymä</a></li>
-            <li><a href="#yhteystiedot">Ota Yhteyttä</a></li>
-            <!-- Kielivalikko sijoitettuna valikon perään -->
+            <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+            
             <li class="lang-switch">
                 <a href="index.html" class="lang-link active" title="Suomi">FI</a>
                 <span style="color: rgba(255,255,255,0.3);">|</span>
@@ -246,16 +249,17 @@
     <div class="hero">
         <h1>Viisas koti, johon voit luottaa</h1>
          
-        <ul style="list-style: none; padding: 0; margin: 0 auto 35px auto; max-width: 500px; text-align: left; font-size: 1.2rem; color: #93c5fd; line-height: 1.8;">
-            <li style="margin-bottom: 10px; display: flex; align-items: flex-start;">
+        <!-- Уменьшили font-size с 1.2rem до 1.05rem и margin-bottom для компактности -->
+        <ul style="list-style: none; padding: 0; margin: 0 auto 20px auto; max-width: 480px; text-align: left; font-size: 1.05rem; color: #93c5fd; line-height: 1.6;">
+            <li style="margin-bottom: 8px; display: flex; align-items: flex-start;">
                 <span style="color: #38bdf8; margin-right: 10px;">✔</span> 
                 Mukavuus, turvallisuus ja resurssien optimointi
             </li>
-            <li style="margin-bottom: 10px; display: flex; align-items: flex-start;">
+            <li style="margin-bottom: 8px; display: flex; align-items: flex-start;">
                 <span style="color: #38bdf8; margin-right: 10px;">✔</span> 
                 Ilman pilvipalveluita ja kuukausimaksuja
             </li>
-            <li style="margin-bottom: 10px; display: flex; align-items: flex-start;">
+            <li style="margin-bottom: 8px; display: flex; align-items: flex-start;">
                 <span style="color: #38bdf8; margin-right: 10px;">✔</span> 
                 Paikallinen ja itsenäinen järjestelmä
             </li>
@@ -266,6 +270,7 @@
 
     <section id="ongelmat" style="margin-bottom: 50px;">
         <h2>1. Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
+    
         <p style="text-indent: 25px; margin-bottom: 25px;">Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:</p>
          
         <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()">Avaa kaikki osiot</button>
