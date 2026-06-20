@@ -56,7 +56,7 @@
             text-decoration: underline;
         }
         
-        /* Kielivalikon tyylit */
+        /* Language menu styles */
         .lang-switch {
             display: flex;
             gap: 8px;
@@ -81,7 +81,7 @@
             text-decoration: underline;
         }
 
-        /* Обновленный компактный Hero-блок с еле заметным фото (8% видимости) */
+        /* Updated compact Hero unit with a barely noticeable photo (8% visibility) */
         .hero {
             background: linear-gradient(rgba(34, 49, 63, 0.92), rgba(34, 49, 63, 0.92)), url('https://picsum.photos/1200/600?random=10') no-repeat center center/cover;
             color: white;
@@ -105,7 +105,7 @@
         }
         h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
          
-        /* Globaali tekstien tasaus */
+        /* Global text alignment */
         p, li {
             text-align: justify;
         }
@@ -122,7 +122,7 @@
             background-color: #27ae60;
             color: white;
             text-decoration: none;
-            padding: 10px 25px; /* Сделали кнопку чуть компактнее */
+            padding: 10px 25px; 
             border-radius: 25px;
             font-weight: bold;
             transition: background 0.3s;
@@ -137,7 +137,7 @@
             margin-top: 15px;
         }
 
-        /* Harmonikka-valikon tyylit (Accordion) */
+        /* Accordion Menu Styles (Accordion) */
         .accordion-item {
             background: #fff;
             border-radius: 8px;
@@ -162,7 +162,7 @@
             padding: 0 20px 20px 20px;
         }
          
-        /* Reunojen värit eri harmonikkalohkoille */
+        /* Border colors for different accordion blocks */
         .border-red { border-left: 4px solid #ef4444; }
         .border-red summary { color: #ef4444; }
          
@@ -175,7 +175,7 @@
         .border-blue { border-left: 4px solid #3b82f6; }
         .border-blue summary { color: #3b82f6; }
 
-        /* Kaikkien osioiden hallintapainike */
+        /* Manage all sections button */
         .toggle-all-btn {
             display: inline-block;
             background-color: #cbd5e1;
@@ -194,7 +194,7 @@
             color: #fff;
         }
 
-        /* Uuden käyttöliittymälohkon varta vasten tehdyt tyylit */
+        /* Custom styles for the new UI block */
         .widget-grid {
             display: flex;
             gap: 20px;
@@ -225,11 +225,13 @@
         }
     </style>
 </head>
+<!-- END HEAD SECTION -->
+    
 <body>
 
     <nav>
         <ul>
-            <!-- Короткие и лаконичные пункты меню -->
+            <!-- Short and concise menu items -->
             <li><a href="#ongelmat">Ratkaisut</a></li>
             <li><a href="#miksi-me">Edut</a></li>
             <li><a href="#hinnasto">Hinnasto</a></li>
@@ -249,7 +251,6 @@
     <div class="hero" id="hero-bg">
         <h1>Viisas koti, johon voit luottaa</h1>
          
-        <!-- Уменьшили font-size с 1.2rem до 1.05rem и margin-bottom для компактности -->
         <ul style="list-style: none; padding: 0; margin: 0 auto 20px auto; max-width: 480px; text-align: left; font-size: 1.05rem; color: #93c5fd; line-height: 1.6;">
             <li style="margin-bottom: 8px; display: flex; align-items: flex-start;">
                 <span style="color: #38bdf8; margin-right: 10px;">✔</span> 
@@ -268,35 +269,36 @@
         <a href="#yhteystiedot" class="cta-button">Pyydä ilmainen konsultaatio</a>
     </div>
 
-    <section id="ongelmat" style="margin-bottom: 50px;">
-        <h2>1. Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
+<!-- SECTION Ratkaisut -->
+<section id="ongelmat" style="margin-bottom: 50px;">
+    <h2>1. Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
     
-        <p style="text-indent: 25px; margin-bottom: 25px;">Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:</p>
+    <p style="text-indent: 25px; margin-bottom: 25px;">Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:</p>
          
-        <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()">Avaa kaikki osiot</button>
+    <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()">Avaa kaikki osiot</button>
 
-        <details class="accordion-item border-red">
-            <summary>💧 Vesivuotojen valvonta (Vuotovahti)</summary>
+    <details class="accordion-item border-red">
+        <summary>💧 Vesivuotojen valvonta (Vuotovahti)</summary>
             <div class="accordion-content">
                 <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
                     <li>Automaattiset ilmoitukset puhelimeen heti, jos järjestelmä havaitsee vesivuodon.</li>
                     <li>Yhteensopivien laitteiden avulla järjestelmä voi <strong>sulkea päävesiventtiilin automaattisesti</strong> vahinkojen minimoimiseksi.</li>
                 </ul>
             </div>
-        </details>
+    </details>
 
-        <details class="accordion-item border-amber">
-            <summary>🛡️ Turvallisuus ja valvonta</summary>
+    <details class="accordion-item border-amber">
+        <summary>🛡️ Turvallisuus ja valvonta</summary>
             <div class="accordion-content">
                 <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
                     <li><strong>Ovien ja ikkunoiden tilatarkistus:</strong> Tarkista yhdellä vilkaisulla puhelimestasi, ovatko kaikki ovet ja ikkunat kiinni. Järjestelmä lähettää ilmoituksen luvattomasta avauksesta.</li>
                     <li>Kameravalvonta: reaaliaikainen seuranta ja älykkäät hälytykset puhelimeen, jos alueella havaitaan liikettä poissa ollessasi.</li>
                 </ul>
             </div>
-        </details>
+    </details>
 
-        <details class="accordion-item border-emerald">
-            <summary>⚡ Sähkönkulutuksen ja valaistuksen optimointi</summary>
+    <details class="accordion-item border-emerald">
+        <summary>⚡ Sähkönkulutuksen ja valaistuksen optimointi</summary>
             <div class="accordion-content">
                 <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
                     <li>Sähköauton lataus automaattisesti silloin, kun <strong>pörssisähkön hinta on halvimmillaan</strong>.</li>
@@ -306,86 +308,90 @@
                     <li>Koko kodin ja yksittäisten laitteiden sähkönkulutuksen seuranta reaaliajassa.</li>
                 </ul>
             </div>
-        </details>
+    </details>
 
-        <details class="accordion-item border-blue">
-            <summary>🌡️ Sisäilma, ilmasto ja mukavuus</summary>
+    <details class="accordion-item border-blue">
+        <summary>🌡️ Sisäilma, ilmasto ja mukavuus</summary>
             <div class="accordion-content">
                 <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
                     <li>Tarkka sisäilman seuranta: lämpötila, ilmankosteus sekä ilmanlaatu (PM2.5, VOC, CO/CO2).</li>
                     <li><strong>Ilmanvaihdon ja sisäilman automaattinen ohjaus:</strong> Ohjelmoitujen tavoitearvojen (kuten lämpötilan, kosteuden tai ilmanlaadun) automaattinen ylläpito ja säätö, mikäli kohteessa on tähän soveltuva ja yhteensopiva laitteisto.</li>
                 </ul>
             </div>
-        </details>
+    </details>
 
-        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px; margin-bottom: 25px; text-align: center;">
-            <span style="font-size: 1.3rem; display: block; margin-bottom: 8px;">📱 <strong>Ei kuukausimaksuja järjestelmän käytöstä</strong></span>
+    <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px; margin-bottom: 25px; text-align: center;">
+        <span style="font-size: 1.3rem; display: block; margin-bottom: 8px;">📱 <strong>Ei kuukausimaksuja järjestelmän käytöstä</strong></span>
             <p style="margin: 0 auto; max-width: 650px; color: #475569; font-size: 0.95rem; line-height: 1.6;">
                 Järjestelmän käyttö ei vaadi meiltä ostettavia kuukausimaksuja - laitteisto ja ohjelmisto ovat omasi. Etäohjaus ja ilmoitukset hyödyntävät kolmansien osapuolten tarjoamia maksuttomia rajapintoja (API).
             </p>
-        </div>
+    </div>
 
-        <!-- Блок с вашей реальной фотографией смартфона -->
-        <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
-            <img class="section-img" 
-                 src="images/example_smartphone_edit.png" 
-                 alt="Älykodin käyttöliittymä puhelimessa" 
-                 style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+    <!-- A block with your actual smartphone photo -->
+    <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
+        <img class="section-img" 
+            src="images/example_smartphone_edit.png" 
+            alt="Älykodin käyttöliittymä puhelimessa" 
+            style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
             
             <figcaption style="margin-top: 10px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4;">
                 📱 <strong>Esimerkki käyttöliittymästä:</strong> Keittiön sensorien seuranta ja valaistuksen ohjaus suoraan puhelimessa.
             </figcaption>
-        </figure>
+    </figure>
         
-    </section>
+</section>
 
+<!-- SECTION Edut -->
+    
 <section id="miksi-me" style="margin-bottom: 50px;">
     <h2>2. Miten ratkaisumme eroaa muista?</h2>
+    
     <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – <strong>riippumattomuuden pilvipalveluista sekä vapauden valita laitteet eri valmistajilta</strong>.</p>
 
     <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Avaa kaikki osiot</button>
 
-    <!-- АККОРДЕОНЫ (Все 3 важных тезиса полностью сохранены) -->
+    <!-- ACCORDIONS (All 3 important theses are fully preserved) -->
     <div id="section2-accordions" style="margin-bottom: 25px;">
          
         <details class="accordion-item border-blue">
             <summary>🌐 Täysin paikallinen hallinta</summary>
-            <div class="accordion-content">
-                <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                    Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, <strong>jos</strong> haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
-                </p>
-            </div>
+                <div class="accordion-content">
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, <strong>jos</strong> haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
+                    </p>
+                </div>
         </details>
          
         <details class="accordion-item border-blue">
             <summary>☁️ Ei riippuvuutta pilvipalveluista</summary>
-            <div class="accordion-content">
-                <!-- Первый абзац: Проблема большинства систем -->
-                <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
-                    Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta.
-                </p>
-                <!-- Второй абзац: Наше преимущество -->
-                <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                    Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa. Tarvittaessa järjestelmään voidaan kuitenkin määrittää <strong>turvallinen etäyhteys</strong>, joka toteutetaan yleisesti hyväksyttyjä tietoturvakäytäntöjä noudattaen.
-                </p>
-            </div>
+                <div class="accordion-content">
+                    <!-- First paragraph: The problem with most systems -->
+                    <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
+                        Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta.
+                    </p>
+
+                    <!-- Second paragraph: Our advantage -->
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa. Tarvittaessa järjestelmään voidaan kuitenkin määrittää <strong>turvallinen etäyhteys</strong>, joka toteutetaan yleisesti hyväksyttyjä tietoturvakäytäntöjä noudattaen.
+                    </p>
+                </div>
         </details>
          
         <details class="accordion-item border-blue">
             <summary>🔌 Riippumattomuus laitevalmistajista (Vapaus valita)</summary>
-            <div class="accordion-content">
-                <!-- Первый абзац: Свобода выбора брендов -->
-                <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
-                    Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
-                </p>
-                <!-- Второй абзац: Важное технологическое ограничение -->
-                <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                    <strong>Ainoa tärkeä kriteeri on</strong>, että laitteiden täytyy tukea juuri sitä teknologiaa (esim. Zigbee tai Matter), jolla järjestelmä kotiisi rakennetaan. Autamme aina mielellämme oikeiden ja yhteensopivien laitteiden valinnassa.
-                </p>
-            </div>
+                <div class="accordion-content">
+                    <!-- First paragraph: Freedom to choose brands -->
+                    <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
+                        Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
+                    </p>
+                    
+                    <!-- Second paragraph: Important technological limitation -->
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        <strong>Ainoa tärkeä kriteeri on</strong>, että laitteiden täytyy tukea juuri sitä teknologiaa (esim. Zigbee tai Matter), jolla järjestelmä kotiisi rakennetaan. Autamme aina mielellämme oikeiden ja yhteensopivien laitteiden valinnassa.
+                    </p>
+                </div>
         </details>
-
-    </div>
+    </div>  /* END ACCORDIONS (All 3 important theses are fully preserved) */
 
     <!-- ТЕХНОЛОГИЧЕСКИЙ БЛОК (Интегрирован openHAB, Zigbee и таблица преимуществ) -->
     <h3>Luotettavat teknologiat ilman remonttihuolia</h3>
