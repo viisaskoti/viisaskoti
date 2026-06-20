@@ -857,7 +857,7 @@
             </div>
 </section>
 
-    <!-- БЛОК 4: ПРИМЕР ИНТЕРФЕЙСА (НОВЫЙ) -->
+<!-- SECTION User interface -->
 <section id="kayttoliittyma" style="margin-bottom: 50px;">
     <h2>4. Nykyaikainen ja selkeä käyttöliittymä</h2>
     <p style="text-indent: 25px; margin-bottom: 35px;">
@@ -890,7 +890,6 @@
             align-items: center;
             justify-content: center;
         }
-        /* Стиль для кликабельных картинок с эффектом увеличения */
         .ui-image-box img {
             max-width: 100%;
             height: auto;
@@ -929,15 +928,14 @@
             color: #475569;
         }
 
-        /* Стили для модального окна (увеличение картинки) */
         .lightbox-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(15, 23, 42, 0.9); /* Темный стильный фон */
-            backdrop-filter: blur(4px); /* Легкое размытие заднего плана */
+            background-color: rgba(15, 23, 42, 0.9); 
+            backdrop-filter: blur(4px); 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -973,7 +971,6 @@
             line-height: 1;
         }
 
-        /* Адаптивность для мобильных устройств */
         @media (max-width: 768px) {
             .ui-table-row {
                 grid-template-columns: 1fr;
@@ -1005,23 +1002,25 @@
             </div>
         </div>
 
-            <!-- Виджет IP-камеры и видеонаблюдения -->
-            <div class="ui-table-row">
-                <div class="ui-image-box">
-                    <img src="images/ip_camera.png" alt="IP-kamera widget" class="zoomable">
-                </div>
-                <div class="ui-text-box">
-                    <strong>Kameravalvonta ja paikallinen tallennus (ONVIF)</strong><br>
-                    Järjestelmä tukee ONVIF-yhteensopivia IP-kameroita, mikä mahdollistaa laajan laiteyhteensopivuuden eri valmistajien välillä.
-                    <p style="margin-top: 8px; margin-bottom: 5px;">Tämän ratkaisun keskeiset edut:</p>
-                    <ul>
-                        <li><strong>Liiketunnistus ja ilmoitukset:</strong> Liiketunnistuksen perusteella järjestelmä voi tallentaa tapahtumat paikallisesti palvelimelle ja lähettää ilmoituksia mobiilisovellukseen.</li>
-                        <li><strong>Yksityisyys ja taloudellisuus:</strong> Tallennus tapahtuu ilman pakollisia pilvipalveluita, mikä parantaa yksityisyyttä ja vähentää jatkuvia käyttökustannuksia.</li>
-                    </ul>
-                </div>
+        <!-- Widget IP camera -->
+        <div class="ui-table-row">
+            <div class="ui-image-box">
+                <img src="images/ip_camera.png" alt="IP-kamera widget" class="zoomable">
             </div>
+            <div class="ui-text-box">
+                <strong>Kameravalvonta ja paikallinen tallennus (ONVIF)</strong><br>
+                Järjestelmä tukee ONVIF-yhteensopivia IP-kameroita, mikä mahdollistaa laajan laiteyhteensopivuuden eri valmistajien välillä.
+                <p style="margin-top: 8px; margin-bottom: 5px;">
+                    Tämän ratkaisun keskeiset edut:
+                </p>
+                <ul>
+                    <li><strong>Liiketunnistus ja ilmoitukset:</strong> Liiketunnistuksen perusteella järjestelmä voi tallentaa tapahtumat paikallisesti palvelimelle ja lähettää ilmoituksia mobiilisovellukseen.</li>
+                    <li><strong>Yksityisyys ja taloudellisuus:</strong> Tallennus tapahtuu ilman pakollisia pilvipalveluita, mikä parantaa yksityisyyttä ja vähentää jatkuvia käyttökustannuksia.</li>
+                </ul>
+            </div>
+        </div>
         
-        
+        <!-- Widget Sheduler appliance -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/appliance_sheduler.png" alt="Kodinkoneiden ajastus-widget" class="zoomable">
@@ -1029,14 +1028,17 @@
             <div class="ui-text-box">
                 <strong>Kodinkoneiden älykäs ajastusavustaja</strong><br>
                 Widget, joka laskee puolestasi optimaalisen käynnistysajan suuria sähkökuormia (kuten pesukonetta, astianpesukonetta tai kuivausrumpua) varten pörssisähkön hintojen mukaan. 
-                <p style="margin-top: 8px; margin-bottom: 5px;">Määrität vain ohjelman keston sekä ajan, johon mennessä syklin täytyy olla valmis, ja järjestelmä kertoo:</p>
+                <p style="margin-top: 8px; margin-bottom: 5px;">
+                    Määrität vain ohjelman keston sekä ajan, johon mennessä syklin täytyy olla valmis, ja järjestelmä kertoo:
+                </p>
                 <ul>
                     <li>Kuinka monta minuuttia kannattaa odottaa ennen käynnistystä</li>
                     <li>Mikä viive (ajastin) kodinkoneeseen tulee asettaa, jotta se toimii halvimpien tuntien aikana</li>
                 </ul>
             </div>
         </div>
-        
+
+        <!-- Widget Safety Ok Alarm -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <div class="ui-image-group">
@@ -1049,7 +1051,8 @@
                 Visuaalinen tilatieto kiinteistön yleisestä turvallisuudesta. Järjestelmä näyttää yhdellä silmäyksellä, onko kaikki kunnossa vai onko jokin laite tai sensori laukaissut hälytyksen.
             </div>
         </div>
-        
+
+        <!-- Widget Detail alarm -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/alarm_water_leak.jpg" alt="Vesivuodon yksityiskohdat" class="zoomable">
@@ -1060,6 +1063,7 @@
             </div>
         </div>
 
+        <!-- Widget Detail notification -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/push_notification_placeholder.png" alt="Esimerkki ilmoituksesta" class="zoomable">
@@ -1077,6 +1081,7 @@
             </div>
         </div>
 
+        <!-- Widget Weather -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/weather.png" alt="Sää-widget" class="zoomable">
@@ -1087,6 +1092,7 @@
             </div>
         </div>
 
+        <!-- Widget historic data plot -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/weather_plot.png" alt="Sääanalysi graafi" class="zoomable">
@@ -1121,21 +1127,21 @@
             const closeBtn = lightbox.querySelector('.lightbox-close');
             const zoomableImages = document.querySelectorAll('.zoomable');
 
-            // Открытие при клике на картинку
+            // Opening by clicking on the image
             zoomableImages.forEach(img => {
                 img.addEventListener('click', function () {
                     lightboxImg.src = this.src;
                     lightboxImg.alt = this.alt;
                     lightbox.classList.add('active');
-                    document.body.style.overflow = 'hidden'; // Отключаем прокрутку сайта на фоне
+                    document.body.style.overflow = 'hidden'; // Disable website background scrolling
                 });
             });
 
-            // Закрытие при клике на крестик или фон
+            // Close by clicking on the cross or background
             function closeLightbox() {
                 lightbox.classList.remove('active');
-                document.body.style.overflow = ''; // Возвращаем прокрутку
-                setTimeout(() => { lightboxImg.src = ''; }, 300); // Очищаем путь после анимации
+                document.body.style.overflow = ''; // Bringing back scrolling
+                setTimeout(() => { lightboxImg.src = ''; }, 300); // Clearing the path after animation
             }
 
             lightbox.addEventListener('click', function (e) {
@@ -1144,7 +1150,7 @@
                 }
             });
 
-            // Закрытие по кнопке Esc
+            // Close with the Esc button
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && lightbox.classList.contains('active')) {
                     closeLightbox();
