@@ -131,13 +131,16 @@
             margin-top: 15px;
         }
 
-        /* ИСПРАВЛЕНО: Правильные стили для нативного аккордеона details/summary */
+        /* ИСПРАВЛЕНО: Безопасные стили для нативного аккордеона (Текст больше не обрезается) */
         .accordion-item {
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.02);
             margin-bottom: 15px;
             border: 1px solid #e2e8f0;
+            display: block;
+            overflow: visible !important;
+            height: auto !important;
         }
         
         .accordion-item summary {
@@ -148,7 +151,7 @@
             outline: none;
             user-select: none;
             transition: background 0.2s;
-            display: list-item; /* Гарантирует появление маркер-стрелочки */
+            display: list-item;
         }
         
         .accordion-item summary:hover {
@@ -157,8 +160,16 @@
         
         /* Контент внутри открытого аккордеона */
         .accordion-content {
-            padding: 10px 20px 24px 20px; /* Увеличен нижний отступ, чтобы текст "дышал" */
-            border-top: 1px solid #f1f5f9; /* Отделяет заголовок от текста внутри */
+            padding: 15px 20px 25px 20px;
+            border-top: 1px solid #f1f5f9;
+            display: block;
+            overflow: visible !important;
+            height: auto !important;
+        }
+
+        .accordion-content ul, .accordion-content li {
+            overflow: visible !important;
+            height: auto !important;
         }
          
         /* Цветовые акценты на левую границу */
@@ -221,6 +232,20 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.03);
             text-align: center;
         }
+
+        /* ИСПРАВЛЕНО: Адаптивная обертка для таблицы (защита от сжатия текста на мобильных) */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -273,7 +298,6 @@
          
         <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()">Avaa kaikki osiot</button>
 
-        <!-- АККОРДЕОН 1 -->
         <details class="accordion-item border-red">
             <summary>💧 Vesivuotojen valvonta (Vuotovahti)</summary>
             <div class="accordion-content">
@@ -284,7 +308,6 @@
             </div>
         </details>
 
-        <!-- АККОРДЕОН 2 -->
         <details class="accordion-item border-amber">
             <summary>🛡️ Turvallisuus ja valvonta</summary>
             <div class="accordion-content">
@@ -295,7 +318,6 @@
             </div>
         </details>
 
-        <!-- АККОРДЕОН 3 -->
         <details class="accordion-item border-emerald">
             <summary>⚡ Sähkönkulutuksen ja valaistuksen optimointi</summary>
             <div class="accordion-content">
@@ -309,7 +331,6 @@
             </div>
         </details>
 
-        <!-- АККОРДЕОН 4 -->
         <details class="accordion-item border-blue">
             <summary>🌡️ Sisäilma, ilmasto ja mukavuus</summary>
             <div class="accordion-content">
@@ -320,7 +341,6 @@
             </div>
         </details>
 
-        <!-- ПЛАШКА -->
         <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; margin-top: 35px; margin-bottom: 35px; text-align: center;">
             <span style="font-size: 1.25rem; display: block; margin-bottom: 10px; font-weight: 700; color: #1e293b;">📱 Ei kuukausimaksuja järjestelmän käytöstä</span>
             <p style="margin: 0 auto; max-width: 650px; color: #475569; font-size: 0.95rem; line-height: 1.6; text-align: center;">
@@ -328,7 +348,6 @@
             </p>
         </div>
 
-        <!-- ФОТО -->
         <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
             <img class="section-img" 
                  src="images/example_smartphone_edit.png" 
@@ -342,114 +361,106 @@
         
     </section>
 
- <!--SECTION 2 -->
-<section id="miksi-me" style="margin-bottom: 50px;">
-    <h2>Miten ratkaisumme eroaa muista?</h2>
-    <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – <strong>riippumattomuuden pilvipalveluista sekä vapauden valita laitteet eri valmistajilta</strong>.</p>
+    <section id="miksi-me" style="margin-bottom: 50px;">
+        <h2>Miten ratkaisumme eroaa muista?</h2>
+        <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – <strong>riippumattomuuden pilvipalveluista sekä vapauden valita laitteet eri valmistajilta</strong>.</p>
 
-    <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Avaa kaikki osiot</button>
+        <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Avaa kaikki osiot</button>
 
-    <!-- АККОРДЕОНЫ (Все 3 важных тезиса полностью сохранены) -->
-    <div id="section2-accordions" style="margin-bottom: 25px;">
-         
-        <details class="accordion-item border-blue">
-            <summary>🌐 Täysin paikallinen hallinta</summary>
-            <div class="accordion-content">
-                <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                    Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, <strong>jos</strong> haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
-                </p>
-            </div>
-        </details>
-         
-        <details class="accordion-item border-blue">
-            <summary>☁️ Ei riippuvuutta pilvipalveluista</summary>
-            <div class="accordion-content">
-                <!-- Первый абзац: Проблема большинства систем -->
-                <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
-                    Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta.
-                </p>
-                <!-- Второй абзац: Наше преимущество -->
-                <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                    Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa. Tarvittaessa järjestelmään voidaan kuitenkin määrittää <strong>turvallinen etäyhteys</strong>, joka toteutetaan yleisesti hyväksyttyjä tietoturvakäytäntöjä noudattaen.
-                </p>
-            </div>
-        </details>
-         
-        <details class="accordion-item border-blue">
-            <summary>🔌 Riippumattomuus laitevalmistajista (Vapaus valita)</summary>
-            <div class="accordion-content">
-                <!-- Первый абзац: Свобода выбора брендов -->
-                <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
-                    Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
-                </p>
-                <!-- Второй абзац: Важное технологическое ограничение -->
-                <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                    <strong>Ainoa tärkeä kriteeri on</strong>, että laitteiden täytyy tukea juuri sitä teknologiaa (esim. Zigbee tai Matter), jolla järjestelmä kotiisi rakennetaan. Autamme aina mielellämme oikeiden ja yhteensopivien laitteiden valinnassa.
-                </p>
-            </div>
-        </details>
+        <div id="section2-accordions" style="margin-bottom: 25px;">
+             
+            <details class="accordion-item border-blue">
+                <summary>🌐 Täysin paikallinen hallinta</summary>
+                <div class="accordion-content">
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        Järjestelmämme toimii suoraan kodissasi ilman pakollista internet-yhteyttä. Internetiä tarvitaan vain silloin, <strong>jos</strong> haluat järjestelmän näyttävän ajankohtaisen sään mökilläsi, noutavan <strong>pörssisähkön hinnat</strong> tai jos olet matkoilla ja haluat tarkistaa kotisi tilanteen etänä.
+                    </p>
+                </div>
+            </details>
+             
+            <details class="accordion-item border-blue">
+                <summary>☁️ Ei riippuvuutta pilvipalveluista</summary>
+                <div class="accordion-content">
+                    <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
+                        Useimmat nykyiset järjestelmät toimivat pilven kautta. Esimerkiksi kun kytket hälytyksen päälle, käsky kulkee ensin ulkomaisen palvelimen kautta. Jos netti katkeaa tai pilvipalvelu kaatuu, järjestelmä lakkaa toimimasta.
+                    </p>
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        Meidän ratkaisussamme kaikki käskyt suoritetaan paikallisesti suoraan kodissasi täysin offline-tilassa. Tarvittaessa järjestelmään voidaan kuitenkin määrittää <strong>turvallinen etäyhteys</strong>, joka toteutetaan yleisesti hyväksyttyjä tietoturvakäytäntöjä noudattaen.
+                    </p>
+                </div>
+            </details>
+             
+            <details class="accordion-item border-blue">
+                <summary>🔌 Riippumattomuus laitevalmistajista (Vapaus valita)</summary>
+                <div class="accordion-content">
+                    <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
+                        Järjestelmämme ei sido sinua yhteen tiettyyn brändiin. Voit vapaasti ostaa esimerkiksi Philipsin älylampun ja yhdistää sen toisen valmistajan älykytkimeen – meidän järjestelmässämme ne keskustelevat keskenään saumattomasti.
+                    </p>
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        <strong>Ainoa tärkeä kriteeri on</strong>, että laitteiden täytyy tukea juuri sitä teknologiaa (esim. Zigbee tai Matter), jolla järjestelmä kotiisi rakennetaan. Autamme aina mielellämme oikeiden ja yhteensopivien laitteiden valinnassa.
+                    </p>
+                </div>
+            </details>
 
-    </div>
+        </div>
 
-    <!-- ТЕХНОЛОГИЧЕСКИЙ БЛОК (Интегрирован openHAB, Zigbee и таблица преимуществ) -->
-    <h3>Luotettavat teknologiat ilman remonttihuolia</h3>
+        <h3>Luotettavat teknologiat ilman remonttihuolia</h3>
         <p style="margin: 0; text-align: justify; text-indent: 25px;">
             Ratkaisumme perustuu pääosin avoimen lähdekoodin <strong>openHAB-alustaan</strong> ja luotettavaan langattomaan <strong>Zigbee-teknologiaan</strong>. Tämä yhdistelmä takaa tietoturvan, paikallisen toiminnan ilman pilviriippuvuutta sekä asennuksen ilman suuria kaapelointitöitä tai seinien piikkausta.
         </p>
         <p style="margin: 12px 0 0 0; text-align: justify; text-indent: 25px;">
             Teknisten mahdollisuuksien mukaan voimme kuitenkin laajentaa järjestelmää ja hyödyntää myös niitä yhteensopivia teknologioita, jotka kohteessasi ovat jo käytössä.
         </p>
-    <div style="background: #f8fafc; padding: 10px 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 25px; margin-bottom: 25px;">
-        <table style="width: 100%; border-collapse: collapse; background: transparent;">
-            <tbody>
-                <!-- 1. Беспроводные стандарты -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px 0; width: 35%; vertical-align: top;">
-                        <strong>Moderni langaton vapaus</strong>
-                    </td>
-                    <td style="padding: 15px 0 15px 15px; color: #475569; font-size: 0.95rem;">
-                        Käytämme ensisijaisesti <strong>Zigbee</strong>- ja <strong>Matter</strong>-standardeja. Useimmat sensorit toimivat paristoilla vuosia, joten kaapeleita ei tarvitse vetää, eikä asennus vaikuta jo tehtyyn remonttiin. 
-                        <br><small style="color: #64748b; display: block; margin-top: 5px;">*Huom: tietyt laitteet (kuten venttiilimoottorit tai järeät releet) saattavat vaatia paikallisen virransyötön.</small>
-                    </td>
-                </tr>
-                
-                <!-- 2. Промышленные протоколы -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 15px 0; vertical-align: top;">
-                        <strong>Valmius ammattitason järjestelmiin</strong>
-                    </td>
-                    <td style="padding: 15px 0 15px 15px; color: #475569; font-size: 0.95rem;">
-                        Järjestelmä mukautuu vaativiinkin kohteisiin. Voimme integroida ratkaisuun myös teollisuus- ja automaatiostandardeja, kuten <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong> tai <strong>LonWorks</strong>.
-                    </td>
-                </tr>
-                
-                <!-- 3. Кастомная разработка под спец. железо -->
-                <tr>
-                    <td style="padding: 15px 0; vertical-align: top;">
-                        <strong>Räätälöity laitetuki</strong>
-                    </td>
-                    <td style="padding: 15px 0 0 15px; color: #475569; font-size: 0.95rem;">
-                        Onko kohteessasi erikoislaitteita? Tarvittaessa olemme valmiita kehittämään kustomoidun ohjelmistomoduulin juuri sinun spesifistä laitettasi varten, jotta se saadaan osaksi yhtenäistä automaatiota.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Блок с вашей реальной фотографией планшета -->
-    <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
-        <img class="section-img" 
-             src="images/example_tab_edit.png" 
-             alt="Älykodin 3D-pohjakuvat ja käyttöliittymä tabletilla" 
-             style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
         
-        <figcaption style="margin-top: 10px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4;">
-            📊 <strong>Esimerkki käyttöliittymästä:</strong> Kodin reaaliaikainen tilannekuva ja hallinta interaktiivisen 3D-pohjakuvauksen avulla tabletilla.
-        </figcaption>
-    </figure>
-    
-</section>
+        <div class="table-responsive">
+            <table style="width: 100%; border-collapse: collapse; background: transparent;">
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 15px 0; width: 35%; vertical-align: top;">
+                            <strong>Moderni langaton vapaus</strong>
+                        </td>
+                        <td style="padding: 15px 0 15px 15px; color: #475569; font-size: 0.95rem;">
+                            Käytämme ensisijaisesti <strong>Zigbee</strong>- ja <strong>Matter</strong>-standardeja. Useimmat sensorit toimivat paristoilla vuosia, joten kaapeleita ei tarvitse vetää, eikä asennus vaikuta jo tehtyyn remonttiin. 
+                            <br><small style="color: #64748b; display: block; margin-top: 5px;">*Huom: tietyt laitteet (kuten venttiilimoottorit tai järeät releet) saattavat vaatia paikallisen virransyötön.</small>
+                        </td>
+                    </tr>
+                    
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 15px 0; vertical-align: top;">
+                            <strong>Valmius ammattitason järjestelmiin</strong>
+                        </td>
+                        <td style="padding: 15px 0 15px 15px; color: #475569; font-size: 0.95rem;">
+                            Järjestelmä mukautuu vaativiinkin kohteisiin. Voimme integroida ratkaisuun myös teollisuus- ja automaatiostandardeja, kuten <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong> tai <strong>LonWorks</strong>.
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding: 15px 0; vertical-align: top;">
+                            <strong>Räätälöity laitetuki</strong>
+                        </td>
+                        <td style="padding: 15px 0 0 15px; color: #475569; font-size: 0.95rem;">
+                            Onko kohteessasi erikoislaitteita? Tarvittaessa olemme valmiita kehittämään kustomoidun ohjelmistomoduulin juuri sinun spesifistä laitettasi varten, jotta se saadaan osaksi yhtenäistä automaatiota.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
+            <img class="section-img" 
+                 src="images/example_tab_edit.png" 
+                 alt="Älykodin 3D-pohjakuvat ja käyttöliittymä tabletilla" 
+                 style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+            
+            <figcaption style="margin-top: 10px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4;">
+                📊 <strong>Esimerkki käyttöliittymästä:</strong> Kodin reaaliaikainen tilannekuva ja hallinta interaktiivisen 3D-pohjakuvauksen avulla tabletilla.
+            </figcaption>
+        </figure>
+        
+    </section>
+<!--SECTION 3 -->
+<!--SECTION 3 -->
+<!--SECTION 3 -->
 <section id="hinnasto" style="margin-bottom: 50px;">
     <h2>Palvelun hinta</h2>
     <p style="color: #475569; font-size: 1.1rem; margin-top: 10px; margin-bottom: 25px;">
@@ -1377,7 +1388,7 @@
 
 </section>
 
-    <script>
+<script>
         // Sektio 1 hallinta
         function toggleSection1() {
             const sect1 = document.getElementById('ongelmat');
@@ -1422,9 +1433,7 @@
             }
         }
     </script>
-    </div>
 
-    <!-- Скрипт для случайной смены фонов Оулу от 01 до 07 -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const totalImages = 7; // Количество картинок (01-07)
@@ -1433,17 +1442,14 @@
             // Превращает числа 1, 2... в строки "01", "02"
             const formattedNumber = randomNumber.toString().padStart(2, '0');
             
-            // Путь к вашим новым WebP файлам в подпапке hero
+            // Путь к WebP файлам в подпапке hero
             const randomImageUrl = `images/hero/city_bg_${formattedNumber}.webp`;
             
             const heroElement = document.getElementById('hero-bg');
             if (heroElement) {
-                // Подставляем случайную картинку, сохраняя красивое темное затемнение
                 heroElement.style.backgroundImage = `linear-gradient(rgba(34, 49, 63, 0.92), rgba(34, 49, 63, 0.92)), url('${randomImageUrl}')`;
             }
         });
     </script>
-</body>
-</html>
 </body>
 </html>
