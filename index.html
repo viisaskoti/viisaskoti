@@ -268,77 +268,83 @@
         <a href="#yhteystiedot" class="cta-button">Pyydä ilmainen konsultaatio</a>
     </div>
 
-    <section id="ongelmat" style="margin-bottom: 50px;">
-        <h2>Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
-    
-        <p style="text-indent: 25px; margin-bottom: 25px;">Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:</p>
-         
-        <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()">Avaa kaikki osiot</button>
+<section id="ongelmat" style="margin-bottom: 50px; padding: 0 5px; box-sizing: border-box;">
+    <h2>Mitä voimme ratkaista? – Turvallisuutta ja mukavuutta kotiisi</h2>
 
-        <details class="accordion-item border-red">
-            <summary>💧 Vesivuotojen valvonta (Vuotovahti)</summary>
-            <div class="accordion-content">
-                <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
-                    <li>Automaattiset ilmoitukset puhelimeen heti, jos järjestelmä havaitsee vesivuodon.</li>
-                    <li>Yhteensopivien laitteiden avulla järjestelmä voi <strong>sulkea päävesiventtiilin automaattisesti</strong> vahinkojen minimoimiseksi.</li>
-                </ul>
-            </div>
-        </details>
+    <p style="margin-bottom: 25px; color: #334155; line-height: 1.6;">
+        Nykyaikainen automaatio poistaa arjen huolet, säästää rahaa ja tekee asumisesta vaivatonta. Tässä on esimerkkejä siitä, mitä järjestelmämme voi tehdä puolestasi:
+    </p>
+     
+    <button class="toggle-all-btn" id="toggleAllBtn1" onclick="toggleSection1()" style="margin-bottom: 20px;">Avaa kaikki osiot</button>
 
-        <details class="accordion-item border-amber">
-            <summary>🛡️ Turvallisuus ja valvonta</summary>
-            <div class="accordion-content">
-                <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
-                    <li><strong>Ovien ja ikkunoiden tilatarkistus:</strong> Tarkista yhdellä vilkaisulla puhelimestasi, ovatko kaikki ovet ja ikkunat kiinni. Järjestelmä lähettää ilmoituksen luvattomasta avauksesta.</li>
-                    <li>Kameravalvonta: reaaliaikainen seuranta ja älykkäät hälytykset puhelimeen, jos alueella havaitaan liikettä poissa ollessasi.</li>
-                </ul>
-            </div>
-        </details>
-
-        <details class="accordion-item border-emerald">
-            <summary>⚡ Sähkönkulutuksen ja valaistuksen optimointi</summary>
-            <div class="accordion-content">
-                <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
-                    <li>Sähköauton lataus automaattisesti silloin, kun <strong>pörssisähkön hinta on halvimmillaan</strong>.</li>
-                    <li>Lattialämmityksen (esim. kylpyhuone) älykäs ohjaus pörssisähkön hinnan ja ilmankosteuden mukaan.</li>
-                    <li>Widget näyttää parhaan ja edullisimman ajan pesukoneen, astianpesukoneen tai muiden suurteholaitteiden käynnistämiselle. <strong>Valitse vain kellonaika, johon mennessä ohjelman täytyy olla valmis</strong> – järjestelmä laskee optimaalisen aloitusajan pörssisähkön hintojen mukaan.</li>
-                    <li><strong>Valaistuksen ohjaus:</strong> Mahdollistaa erilaisten valaistusskenaarioiden toteuttamisen (kuten syttymisen liiketunnistimesta vain hämärässä) sekä koko kodin valojen sammuttamisen yhdellä kertapainalluksella kotoa poistuttaessa.</li>
-                    <li>Koko kodin ja yksittäisten laitteiden sähkönkulutuksen seuranta reaaliajassa.</li>
-                </ul>
-            </div>
-        </details>
-
-        <details class="accordion-item border-blue">
-            <summary>🌡️ Sisäilma, ilmasto ja mukavuus</summary>
-            <div class="accordion-content">
-                <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
-                    <li>Tarkka sisäilman seuranta: lämpötila, ilmankosteus sekä ilmanlaatu (PM2.5, VOC, CO/CO2).</li>
-                    <li><strong>Ilmanvaihdon ja sisäilman automaattinen ohjaus:</strong> Ohjelmoitujen tavoitearvojen (kuten lämpötilan, kosteuden tai ilmanlaadun) automaattinen ylläpito ja säätö, mikäli kohteessa on tähän soveltuva ja yhteensopiva laitteisto.</li>
-                </ul>
-            </div>
-        </details>
-
-        <div style="background: #f8fafc; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px; margin-bottom: 25px; text-align: center;">
-            <span style="font-size: 1.3rem; display: block; margin-bottom: 8px;">📱 <strong>Ei kuukausimaksuja järjestelmän käytöstä</strong></span>
-            <p style="margin: 0 auto; max-width: 650px; color: #475569; font-size: 0.95rem; line-height: 1.6;">
-                Järjestelmän käyttö ei vaadi meiltä ostettavia kuukausimaksuja - laitteisto ja ohjelmisto ovat omasi. Etäohjaus ja ilmoitukset hyödyntävät kolmansien osapuolten tarjoamia maksuttomia rajapintoja (API).
-            </p>
+    <!-- АККОРДЕОН 1: ВОДА -->
+    <details class="accordion-item border-red" style="margin-bottom: 12px; width: 100%; box-sizing: border-box;">
+        <summary style="padding: 12px; cursor: pointer; font-weight: 600; display: list-item;">💧 Vesivuotojen valvonta (Vuotovahti)</summary>
+        <div class="accordion-content" style="padding: 12px 15px;">
+            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
+                <li style="margin-bottom: 8px;">Automaattiset ilmoitukset puhelimeen heti, jos järjestelmä havaitsee vesivuodon.</li>
+                <li>Yhteensopivien laitteiden avulla järjestelmä voi <strong>sulkea päävesiventtiilin automaattisesti</strong> vahinkojen minimoimiseksi.</li>
+            </ul>
         </div>
+    </details>
 
-        <!-- Блок с вашей реальной фотографией смартфона -->
-        <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
-            <img class="section-img" 
-                 src="images/example_smartphone_edit.png" 
-                 alt="Älykodin käyttöliittymä puhelimessa" 
-                 style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
-            
-            <figcaption style="margin-top: 10px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4;">
-                📱 <strong>Esimerkki käyttöliittymästä:</strong> Keittiön sensorien seuranta ja valaistuksen ohjaus suoraan puhelimessa.
-            </figcaption>
-        </figure>
+    <!-- АККОРДЕОН 2: БЕЗОПАСНОСТЬ -->
+    <details class="accordion-item border-amber" style="margin-bottom: 12px; width: 100%; box-sizing: border-box;">
+        <summary style="padding: 12px; cursor: pointer; font-weight: 600; display: list-item;">🛡️ Turvallisuus ja valvonta</summary>
+        <div class="accordion-content" style="padding: 12px 15px;">
+            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
+                <li style="margin-bottom: 8px;"><strong>Ovien ja ikkunoiden tilatarkistus:</strong> Tarkista yhdellä vilkaisulla puhelimestasi, ovatko kaikki ovet ja ikkunat kiinni. Järjestelmä lähettää ilmoituksen luvattomasta avauksesta.</li>
+                <li>Kameravalvonta: reaaliaikainen seuranta ja älykkäät hälytykset puhelimeen, jos alueella havaitaan liikettä poissa ollessasi.</li>
+            </ul>
+        </div>
+    </details>
+
+    <!-- АККОРДЕОН 3: ЭЛЕКТРИЧЕСТВО -->
+    <details class="accordion-item border-emerald" style="margin-bottom: 12px; width: 100%; box-sizing: border-box;">
+        <summary style="padding: 12px; cursor: pointer; font-weight: 600; display: list-item;">⚡ Sähkönkulutuksen ja valaistuksen optimointi</summary>
+        <div class="accordion-content" style="padding: 12px 15px;">
+            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
+                <li style="margin-bottom: 8px;">Sähköauton lataus automaattisesti silloin, kun <strong>pörssisähkön hinta on halvimmillaan</strong>.</li>
+                <li style="margin-bottom: 8px;">Lattialämmityksen (esim. kylpyhuone) älykäs ohjaus pörssisähkön hinnan ja ilmankosteuden mukaan.</li>
+                <li style="margin-bottom: 8px;">Widget näyttää parhaan ja edullisimman ajan pesukoneen, astianpesukoneen tai muiden suurteholaitteiden käynnistämiselle. <strong>Valitse vain kellonaika, johon mennessä ohjelman täytyy olla valmis</strong> – järjestelmä laskee optimaalisen aloitusajan pörssisähkön hintojen mukaan.</li>
+                <li style="margin-bottom: 8px;"><strong>Valaistuksen ohjaus:</strong> Mahdollistaa erilaisten valaistusskenaarioiden toteuttamisen (kuten syttymisen liiketunnistimesta vain hämärässä) sekä koko kodin valojen sammuttamisen yhdellä kertapainalluksella kotoa poistuttaessa.</li>
+                <li>Koko kodin ja yksittäisten laitteiden sähkönkulutuksen seuranta reaaliajassa.</li>
+            </ul>
+        </div>
+    </details>
+
+    <!-- АККОРДЕОН 4: КЛИМАТ -->
+    <details class="accordion-item border-blue" style="margin-bottom: 12px; width: 100%; box-sizing: border-box;">
+        <summary style="padding: 12px; cursor: pointer; font-weight: 600; display: list-item;">🌡️ Sisäilma, ilmasto ja mukavuus</summary>
+        <div class="accordion-content" style="padding: 12px 15px;">
+            <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.6;">
+                <li style="margin-bottom: 8px;">Tarkka sisäilman seuranta: lämpötila, ilmankosteus sekä ilmanlaatu (PM2.5, VOC, CO/CO2).</li>
+                <li><strong>Ilmanvaihdon ja sisäilman automaattinen ohjaus:</strong> Ohjelmoitujen tavoitearvojen (kuten lämpötilan, kosteuden tai ilmanlaadun) automaattinen ylläpito ja säätö, mikäli kohteessa on tähän soveltuva ja yhteensopiva laitteisto.</li>
+            </ul>
+        </div>
+    </details>
+
+    <!-- ПЛАШКА: EI KUUKAUSIMAKSUJA -->
+    <div style="background: #f8fafc; padding: 20px 15px; border-radius: 8px; border: 1px solid #e2e8f0; margin-top: 30px; margin-bottom: 25px; text-align: center; box-sizing: border-box; width: 100%;">
+        <span style="font-size: 1.2rem; display: block; margin-bottom: 8px; font-weight: 700; color: #1e293b;">📱 Ei kuukausimaksuja järjestelmän käytöstä</span>
+        <p style="margin: 0 auto; max-width: 650px; color: #475569; font-size: 0.95rem; line-height: 1.6; text-align: center;">
+            Järjestelmän käyttö ei vaadi meiltä ostettavia kuukausimaksuja - laitteisto ja ohjelmisto ovat omasi. Etäohjaus ja ilmoitukset hyödyntävät kolmansien osapuolten tarjoamia maksuttomia rajapintoja (API).
+        </p>
+    </div>
+
+    <!-- БЛОК С ФОТОГРАФИЕЙ -->
+    <figure style="margin: 30px auto 0 auto; max-width: 650px; width: 100%; text-align: center; box-sizing: border-box; padding: 0 5px;">
+        <img class="section-img" 
+             src="images/example_smartphone_edit.png" 
+             alt="Älykodin käyttöliittymä puhelimessa" 
+             style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
         
-    </section>
-
+        <figcaption style="margin-top: 12px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4; text-align: center;">
+            📱 <strong>Esimerkki käyttöliittymästä:</strong> Keittiön sensorien seuranta ja valaistuksen ohjaus suoraan puhelimessa.
+        </figcaption>
+    </figure>
+    
+</section>
 <section id="miksi-me" style="margin-bottom: 50px;">
     <h2>Miten ratkaisumme eroaa muista?</h2>
     <p style="text-indent: 25px; margin-bottom: 25px;">Markkinoilla on paljon älykotiratkaisuja, mutta me tarjoamme jotain täysin erilaista – <strong>riippumattomuuden pilvipalveluista sekä vapauden valita laitteet eri valmistajilta</strong>.</p>
