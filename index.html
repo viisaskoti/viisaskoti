@@ -655,130 +655,11 @@
 </section>
 
 <!-- SECTION User interface -->
-<section id="kayttoliittyma" style="margin-bottom: 50px;">
+<section id="kayttoliittyma">
     <h2>Nykyaikainen ja selkeä käyttöliittymä</h2>
-    <p style="text-indent: 25px; margin-bottom: 35px;">
+    <p class="ui-intro-text">
         Toteuttamamme automaatiojärjestelmät eivät ole monimutkaisia hallita. Saat käyttöösi selkeän ja visuaalisesti tyylikkään käyttöliittymän, jolla voit seurata ja ohjata kotisi tai kiinteistösi tilaa reaaliajassa millä tahansa laitteella - puhelimella, tabletilla tai tietokoneella.
     </p>
-
-    <style>
-        .ui-table-container {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            width: 100%;
-        }
-        .ui-table-row {
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 25px;
-            align-items: center;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 25px;
-        }
-        .ui-table-row:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .ui-image-box {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-        }
-        .ui-image-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            cursor: zoom-in;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .ui-image-box img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
-        }
-        .ui-image-group {
-            display: flex;
-            gap: 10px;
-            width: 100%;
-        }
-        .ui-image-group img {
-            flex: 1;
-            width: 50%;
-        }
-        .ui-text-box {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #334155;
-        }
-        .ui-text-box strong {
-            color: #0f172a;
-            display: inline-block;
-            margin-bottom: 5px;
-            font-size: 18px;
-        }
-        .ui-text-box ul {
-            margin-top: 8px;
-            padding-left: 20px;
-            color: #475569;
-        }
-
-        .lightbox-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(15, 23, 42, 0.9); 
-            backdrop-filter: blur(4px); 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-        .lightbox-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .lightbox-img {
-            max-width: 90%;
-            max-height: 85vh;
-            border-radius: 6px;
-            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
-            transform: scale(0.95);
-            transition: transform 0.3s ease;
-        }
-        .lightbox-overlay.active .lightbox-img {
-            transform: scale(1);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            color: #fff;
-            font-size: 35px;
-            font-weight: 300;
-            cursor: pointer;
-            user-select: none;
-            line-height: 1;
-        }
-
-        @media (max-width: 768px) {
-            .ui-table-row {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            .ui-image-box {
-                max-width: 350px;
-                margin: 0 auto;
-            }
-        }
-    </style>
 
     <div class="ui-table-container">
         
@@ -789,7 +670,7 @@
             <div class="ui-text-box">
                 <strong>Pörssisähkön hintatiedot</strong><br>
                 Sähkön hintatiedot näyttävä widget, jonka avulla järjestelmä seuraa pörssisähkön hintoja reaaliajassa. 
-                <p style="margin-top: 8px; margin-bottom: 5px;">Yhteensopivan laitteiston avulla on mahdollista ohjata kuormia automaattisesti edullisimmille tunneille, kuten esimerkiksi:</p>
+                <p class="ui-list-lead">Yhteensopivan laitteiston avulla on mahdollista ohjata kuormia automaattisesti edullisimmille tunneille, kuten esimerkiksi:</p>
                 <ul>
                     <li>Ladata sähköautoa</li>
                     <li>Kytkeä lattialämmitys päälle/pois</li>
@@ -799,7 +680,6 @@
             </div>
         </div>
 
-        <!-- Widget IP camera -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/ip_camera.png" alt="IP-kamera widget" class="zoomable">
@@ -807,7 +687,7 @@
             <div class="ui-text-box">
                 <strong>Kameravalvonta ja paikallinen tallennus (ONVIF)</strong><br>
                 Järjestelmä tukee ONVIF-yhteensopivia IP-kameroita, mikä mahdollistaa laajan laiteyhteensopivuuden eri valmistajien välillä.
-                <p style="margin-top: 8px; margin-bottom: 5px;">
+                <p class="ui-list-lead">
                     Tämän ratkaisun keskeiset edut:
                 </p>
                 <ul>
@@ -817,7 +697,6 @@
             </div>
         </div>
         
-        <!-- Widget Sheduler appliance -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/appliance_sheduler.png" alt="Kodinkoneiden ajastus-widget" class="zoomable">
@@ -825,7 +704,7 @@
             <div class="ui-text-box">
                 <strong>Kodinkoneiden älykäs ajastusavustaja</strong><br>
                 Widget, joka laskee puolestasi optimaalisen käynnistysajan suuria sähkökuormia (kuten pesukonetta, astianpesukonetta tai kuivausrumpua) varten pörssisähkön hintojen mukaan. 
-                <p style="margin-top: 8px; margin-bottom: 5px;">
+                <p class="ui-list-lead">
                     Määrität vain ohjelman keston sekä ajan, johon mennessä syklin täytyy olla valmis, ja järjestelmä kertoo:
                 </p>
                 <ul>
@@ -835,7 +714,6 @@
             </div>
         </div>
 
-        <!-- Widget Safety Ok Alarm -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <div class="ui-image-group">
@@ -849,7 +727,6 @@
             </div>
         </div>
 
-        <!-- Widget Detail alarm -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/alarm_water_leak.jpg" alt="Vesivuodon yksityiskohdat" class="zoomable">
@@ -860,25 +737,23 @@
             </div>
         </div>
 
-        <!-- Widget Detail notification -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/push_notification_placeholder.png" alt="Esimerkki ilmoituksesta" class="zoomable">
             </div>
             <div class="ui-text-box">
                 <strong>Esimerkki ilmoituksesta</strong><br>
-                <span style="display: block; margin-bottom: 8px;">
+                <span class="ui-notification-desc">
                     Järjestelmä voi lähettää ilmoituksia ennalta määritettyjen tilanteiden ja tarpeiden mukaan. Tämä voi olla viesti kriittisestä hälytyksestä tai mikä tahansa muu haluttu tilatieto suoraan puhelimeen.
                 </span>
                 
-                <ul style="margin: 5px 0 0 0; padding-left: 20px; font-size: 0.9rem; color: #475569; line-height: 1.4;">
-                    <li style="margin-bottom: 4px;">🎨 <strong>Yksilöllinen ulkoasu maksutta:</strong> Voit toimittaa omat kuvakkeesi (vaatimusten mukaiset), ja otamme ne käyttöön ilman lisämaksua.</li>
+                <ul class="ui-feature-list">
+                    <li>🎨 <strong>Yksilöllinen ulkoasu maksutta:</strong> Voit toimittaa omat kuvakkeesi (vaatimusten mukaiset), ja otamme ne käyttöön ilman lisämaksua.</li>
                     <li>✍️ <strong>Räätälöidyt viestit:</strong> Voit valita ja muokata ilmoitusten tekstisisällöt täysin toiveidesi mukaan — tämäkin sisältyy palveluun.</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Widget Weather -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/weather.png" alt="Sää-widget" class="zoomable">
@@ -889,7 +764,6 @@
             </div>
         </div>
 
-        <!-- Widget historic data plot -->
         <div class="ui-table-row">
             <div class="ui-image-box">
                 <img src="images/weather_plot.png" alt="Sääanalysi graafi" class="zoomable">
@@ -905,8 +779,8 @@
 
     </div>
 
-    <div style="background: #f8fafc; padding: 15px 20px; border-radius: 6px; border: 1px solid #e2e8f0; margin-top: 20px; margin-bottom: 20px;">
-        <p style="margin: 0; color: #64748b; font-size: 0.85rem; line-height: 1.5;">
+    <div class="ui-info-note">
+        <p>
             ℹ️ <strong>Huomautus reaaliaikaisista tiedoista:</strong><br>
             Älykkäiden widgettien toiminta, sähkön hintatiedot sekä sääennusteiden reaaliaikainen päivittyminen edellyttävät jatkuvaa ja toimivaa internetyhteyttä kohteessa. Järjestelmä hyödyntää kolmansien osapuolten virallisia ja maksuttomia rajapintoja (kuten Ilmatieteen laitos FMI ja pörssisähkön palvelimet), joiden saatavuus ja päivitysnopeus ovat riippuvaisia kyseisten palveluntarjoajien omasta verkkopalvelusta.
         </p>
