@@ -328,7 +328,29 @@ nav ul li a:hover {
         max-width: 350px;
         margin: 0 auto;
     }
+    
+    /* Mobile responsive transformation for the card table */
+    .responsive-card-table, 
+    .responsive-card-table tbody, 
+    .responsive-card-table tr, 
+    .responsive-card-table td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    .responsive-card-table tr {
+        padding: 15px 0;
+    }
+    .responsive-card-table td {
+        padding: 0 !important;
+    }
+    .responsive-card-table td:first-child {
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #0f172a;
+    }
 }
+
 /* ==========================================================================
    8. Info notes after user interface widget
    ========================================================================== */
@@ -345,4 +367,24 @@ nav ul li a:hover {
     color: #64748b;
     font-size: 0.85rem;
     line-height: 1.5;
+}
+
+/* ==========================================================================
+   9. UNIVERSAL RESPONSIVE CARD TABLE
+   ========================================================================== */
+.responsive-card-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background: transparent;
+}
+.responsive-card-table tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+.responsive-card-table tr:last-child {
+    border-bottom: none;
+}
+.responsive-card-table td {
+    padding: 15px 0;
+    vertical-align: top;
 }
