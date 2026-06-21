@@ -349,6 +349,11 @@ nav ul li a:hover {
         margin-bottom: 8px;
         color: #0f172a;
     }
+
+    /* Hide title table on mobile devices */
+    .responsive-card-table thead {
+        display: none !important;
+    }
 }
 
 /* ==========================================================================
