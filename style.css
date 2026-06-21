@@ -388,3 +388,8 @@ nav ul li a:hover {
     padding: 15px 0;
     vertical-align: top;
 }
+/* First column and title make bold on laptop */
+.responsive-card-table td:first-child {
+    font-weight: bold;
+    color: #0f172a; 
+}
