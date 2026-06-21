@@ -130,17 +130,22 @@ nav ul li a:hover {
 .accordion-content {
     padding: 0 20px 20px 20px;
 }
-.border-red { border-left: 4px solid #ef4444; }
-.border-red summary { color: #ef4444; }
+
+/* 1. BLUE COLOR: Water leak monitoring (Vuotovahti) */
+.border-red { border-left: 4px solid #2563eb; }
+.border-red summary { color: #2563eb; }
  
-.border-amber { border-left: 4px solid #f59e0b; }
-.border-amber summary { color: #f59e0b; }
+/* 2. DARK GREEN COLOR: Security and surveillance */
+.border-amber { border-left: 4px solid #15803d; }
+.border-amber summary { color: #15803d; }
  
-.border-emerald { border-left: 4px solid #10b981; }
-.border-emerald summary { color: #10b981; }
+/* 3. ORANGE COLOR: Electricity consumption and light optimization */
+.border-emerald { border-left: 4px solid #ea580c; }
+.border-emerald summary { color: #ea580c; }
  
-.border-blue { border-left: 4px solid #3b82f6; }
-.border-blue summary { color: #3b82f6; }
+/* 4. PURPLE COLOR: Indoor air, climate and comfort */
+.border-blue { border-left: 4px solid #7c3aed; }
+.border-blue summary { color: #7c3aed; }
 
 .toggle-all-btn {
     display: inline-block;
