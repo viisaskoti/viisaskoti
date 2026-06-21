@@ -147,6 +147,14 @@ nav ul li a:hover {
 .border-blue { border-left: 4px solid #7c3aed; }
 .border-blue summary { color: #7c3aed; }
 
+/* 5. PRICE SECTION: Core component (Deep Muted Indigo) */
+.border-price-core { border-left: 4px solid #1e3a8a; }
+.border-price-core summary { color: #1e3a8a; }
+
+/* 6. PRICE SECTION: Sensors actuators (Muted Terracotta/Amber) */
+.border-price-sensors { border-left: 4px solid #b45309; }
+.border-price-sensors summary { color: #b45309; }
+
 .toggle-all-btn {
     display: inline-block;
     background-color: #cbd5e1;
