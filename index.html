@@ -244,14 +244,17 @@
 <!-- SECTION Hinnasto -->
 <section id="hinnasto" style="margin-bottom: 50px;">
     <h2>Palvelun hinta</h2>
-        <p style="text-indent: 25px;">Maksat vain laitteista ja asennuksesta – ei sitovia sopimuksia tai jatkuvia kuukausimaksuja.</p>
+    <p style="text-indent: 25px;">Maksat vain laitteista ja asennuksesta – ei sitovia sopimuksia tai jatkuvia kuukausimaksuja.</p>
          
-        <h3>3.1 Laitteet (Esimerkkejä)</h3>
-            <p style="text-indent: 25px; margin-bottom: 20px;">
-                Hankimme kaikki tarvittavat laitteet puolestasi suoraan omakustannushintaan – <strong>emme lisää laitteiden hintoihin omaa katettamme tai mitään muita lisämaksuja</strong>. Kaikki alla olevat hinnat sisältävät arvonlisäveron (sis. ALV 25,5 %). Maksat vain itse laitteiden todellisesta hankintahinnasta ja asennustyöstä. Alla on esimerkkejä tyypillisistä komponenteista ja niiden hinnoista, jotta voit helposti hahmottaa järjestelmän kokonaiskustannukset:
-            </p>
-         
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 40px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
+    <h3>3.1 Laitteet (Esimerkkejä)</h3>
+    <p style="text-indent: 25px; margin-bottom: 20px;">
+        Hankimme kaikki tarvittavat laitteet puolestasi suoraan omakustannushintaan – <strong>emme lisää laitteiden hintoihin omaa katettamme tai mitään muita lisämaksuja</strong>. Kaikki alla olevat hinnat sisältävät arvonlisäveron (sis. ALV 25,5 %). Maksat vain itse laitteiden todellisesta hankintahinnasta ja asennustyöstä. Alla on esimerkkejä tyypillisistä komponenteista ja niiden hinnoista, jotta voit helposti hahmottaa järjestelmän kokonaiskustannukset:
+    </p>
+
+    <details class="accordion-item border-blue" open>
+        <summary>Keskusyksikkö ja järjestelmän ydin (Paikallinen laitteisto)</summary>
+        <div class="accordion-content">
+            <table class="responsive-card-table">
                 <thead>
                     <tr style="background-color: #f1f5f9; border-bottom: 2px solid #cbd5e1; text-align: left;">
                         <th style="padding: 12px; font-weight: 600;">Kuva</th>
@@ -259,80 +262,88 @@
                         <th style="padding: 12px; font-weight: 600; text-align: right;">Arvioitu hinta</th>
                     </tr>
                 </thead>
-            <tbody>
-                <!-- 1. Server -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/oh_server.svg" alt="Palvelin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Keskusyksikkö / Palvelin (Valmis paketti)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">
-                            Järjestelmän aivot, toimii täysin paikallisesti ilman pilveä. Sisältää energiatehokkaan prosessorin, muistin ja nopean SSD-tallennustilan.
-                        </small>
-                         
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            <span style="font-weight: 600;">Säästövinkki:</span> Jos sinulla on jo sopiva tietokone (vähintään 4 Gt RAM / 128 Gt SSD), voimme asentaa Viisas Koti -järjestelmän siihen. Tällöin säästät uuden laitteen hankintakustannuksen kokonaan.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €350
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/oh_server.svg" alt="Palvelin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Keskusyksikkö / Palvelin (Valmis paketti)</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">
+                                Järjestelmän aivot, toimii täysin paikallisesti ilman pilveä. Sisältää energiatehokkaan prosessorin, muistin ja nopean SSD-tallennustilan.
+                            </small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                <span style="font-weight: 600;">Säästövinkki:</span> Jos sinulla on jo sopiva tietokone (vähintään 4 Gt RAM / 128 Gt SSD), voimme asentaa Viisas Koti -järjestelmän siihen. Tällöin säästät uuden laitteen hankintakustannuksen kokonaan.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €350
+                        </td>
+                    </tr>
 
-                <!-- UPS  -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/ups.png" alt="UPS" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>UPS-varavirtalähde (Valinnainen)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">
-                            Varmistaa keskusyksikön katkeamattoman toiminnan lyhyiden sähkökatkojen aikana ja suojaa laitteistoa virtapiikeiltä.
-                        </small>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €120
-                    </td>
-                </tr>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/coordinator.png" alt="Koordinaattori" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Langaton koordinaattori (USB-dongle)</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">
+                                Välttämätön laite, joka luo vakaan ja turvallisen paikallisen verkon kodin äly- ja automaatiolaitteiden yhdistämiseksi.
+                            </small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                <span style="font-weight: 600;">Asiakkaan etu:</span> Voit hankkia tekniset määrittelyt täyttävän USB-sovittimen myös itse valitsemastasi kaupasta. Hyödynnämme sitä mielellämme asennuksessa, jolloing tämä positio jätetään pois hankintalistalta.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €35
+                        </td>
+                    </tr>
 
-                <!-- 3. 4G/5G Router -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/router.png" alt="Reititin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>4G/5G-reititin varayhteydellä (Valinnainen)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">
-                            Mobiiliverkkoreititin, joka toimii joko kodin pääasiallisena internet-yhteytenä tai automaattisena varakanavana kiinteän verkon katketessa.
-                        </small>
-                         
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            <span style="font-weight: 600;">Vikasietoisuus:</span> Jos kiinteä netti katkeaa, järjestelmä voi siirtyä käyttämään SIM-kortilla toimivaa varayhteyttä, jotta saat edelleen tärkeät ilmoitukset ja <strong>etäyhteyden järjestelmään puhelimellasi</strong>.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €80 - €150
-                    </td>
-                </tr>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/ups.png" alt="UPS" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>UPS-varavirtalähde (Valinnainen)</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">
+                                Varmistaa keskusyksikön katkeamattoman toiminnan lyhyiden sähkökatkojen aikana ja suojaa laitteistoa virtapiikeiltä.
+                            </small>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €120
+                        </td>
+                    </tr>
 
-                <!-- 4. Zigbee coordinator -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/coordinator.png" alt="Koordinaattori" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Langaton koordinaattori (USB-dongle)</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">
-                            Välttämätön laite, joka luo vakaan ja turvallisen paikallisen verkon kodin äly- ja automaatiolaitteiden yhdistämiseksi.
-                        </small>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/router.png" alt="Reititin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>4G/5G-reititin varayhteydellä (Valinnainen)</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">
+                                Mobiiliverkkoreititin, joka toimii joko kodin pääasiallisena internet-yhteytenä tai automaattisena varakanavana kiinteän verkon katketessa.
+                            </small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                <span style="font-weight: 600;">Vikasietoisuus:</span> Jos kiinteä netti katkeaa, järjestelmä voi siirtyä käyttämään SIM-kortilla toimivaa varayhteyttä, jotta saat edelleen tärkeät ilmoitukset ja <strong>etäyhteyden järjestelmään puhelimellasi</strong>.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €80 - €150
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </details>
 
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            <span style="font-weight: 600;">Asiakkaan etu:</span> Voit hankkia tekniset määrittelyt täyttävän USB-sovittimen myös itse valitsemastasi kaupasta. Hyödynnämme sitä mielellämme asennuksessa, jolloin tämä positio jätetään pois hankintalistalta.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €35<br>
-                    </td>
-                </tr>
-
-                <!-- 5. Socket -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/socket_16A.jpg" alt="Älypistorasia" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Älypistorasia, 16A</strong><br>
+    <details class="accordion-item border-emerald">
+        <summary>Oheislaitteet, sensorit ja toimilaitteet (Tarpeidesi mukaan)</summary>
+        <div class="accordion-content">
+            <table class="responsive-card-table">
+                <thead>
+                    <tr style="background-color: #f1f5f9; border-bottom: 2px solid #cbd5e1; text-align: left;">
+                        <th style="padding: 12px; font-weight: 600;">Kuva</th>
+                        <th style="padding: 12px; font-weight: 600;">Laite</th>
+                        <th style="padding: 12px; font-weight: 600; text-align: right;">Arvioitu hinta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/socket_16A.jpg" alt="Älypistorasia" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Älypistorasia, 16A</strong><br>
                             <small style="color: #64748b; display: block; margin-bottom: 5px;">Kuormituksen hallinta ja sähkönkulutuksen seuranta.</small>
                             <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
                                 Sopii max. 3,6 kW kuormille. Mahdollistaa kuorman kytkennän ohjauksen pörssisähkön hintojen mukaan.
@@ -340,14 +351,11 @@
                         </td>
                         <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
                             Noin €20<br>
-                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                                per kpl
-                            </small>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
                         </td>
-                </tr>
-                
-                <!-- Motion sensor -->
-                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                    </tr>
+                    
+                    <tr>
                         <td style="padding: 12px; width: 80px;"><img src="images/motion_sensor.jpg" alt="Liiketunnistin" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
                         <td style="padding: 12px;">
                             <strong>Liike- ja valoisuustunnistin</strong><br>
@@ -358,103 +366,88 @@
                         </td>
                         <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
                             Noin €25<br>
-                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                                per kpl
-                            </small>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
                         </td>
                     </tr>
 
-                <!-- Water leak sensor -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/water_leak.jpg" alt="Vesivuotovahti" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Vesivuotovahti (sensori)</strong><br>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/water_leak.jpg" alt="Vesivuotovahti" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Vesivuotovahti (sensori)</strong><br>
                             <small style="color: #64748b; display: block; margin-bottom: 5px;">Ennaltaehkäisevä suoja vesivahinkoja vastaan.</small>
                             <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
                                 Kun sensori havaitsee vuodon, järjestelmä lähettää ilmoituksen. Yhteensopivien laitteiden avulla järjestelmä voi myös sulkea päävesiventtiilin automaattisesti.
                             </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €25<br>
-                        <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                            per kpl
-                        </small>
-                    </td>
-                </tr>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €25<br>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
+                        </td>
+                    </tr>
 
-                <!-- Lamp E27 -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/lamp_e27.jpg" alt="Älylamppu E27" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Älylamppu, E27-kanta</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Valaistuksen älykäs ohjaus ja tunnelmointi.</small>
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            Mahdollisuus säätää valon kirkkautta (himmennys) sekä värilämpötilaa lämpimästä kylmään valkoiseen tilanteen mukaan.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €15<br>
-                        <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                            per kpl
-                        </small>
-                    </td>
-                </tr>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/lamp_e27.jpg" alt="Älylamppu E27" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Älylamppu, E27-kanta</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">Valaistuksen älykäs ohjaus ja tunnelmointi.</small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                Mahdollisuus säätää valon kirkkautta (himmennys) sekä värilämpötilaa lämpimästä kylmään valkoiseen tilanteen mukaan.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €15<br>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
+                        </td>
+                    </tr>
 
-                <!-- Lamp GU10 -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/lamp_gu10.jpg" alt="Älylamppu GU10" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Älylamppu, GU10-kanta</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Kohdevalaisimien ja upotettujen spottien ohjaus.</small>
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            Mahdollisuus säätää valon kirkkautta (himmennys) sekä värilämpötilaa lämpimästä kylmään valkoiseen tilanteen mukaan.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €20<br>
-                        <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                            per kpl
-                        </small>
-                    </td>
-                </tr>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/lamp_gu10.jpg" alt="Älylamppu GU10" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Älylamppu, GU10-kanta</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">Kohdevalaisimien ja upotettujen spottien ohjaus.</small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                Mahdollisuus säätää valon kirkkautta (himmennys) sekä värilämpötilaa lämpimästä kylmään valkoiseen tilanteen mukaan.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €20<br>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
+                        </td>
+                    </tr>
 
-                <!-- Lamp E14 -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/lamp_e14.jpg" alt="Älylamppu E14" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Älylamppu, E14-kanta</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Pienempien valaisimien ja kynttilälamppujen älyohjaus.</small>
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            Mahdollisuus säätää valon kirkkautta (himmennys) sekä värilämpötilaa lämpimästä kylmään valkoiseen tilanteen mukaan.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €15<br>
-                        <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                            per kpl
-                        </small>
-                    </td>
-                </tr>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/lamp_e14.jpg" alt="Älylamppu E14" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Älylamppu, E14-kanta</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">Pienempien valaisimien ja kynttilälamppujen älyohjaus.</small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                Mahdollisuus säätää valon kirkkautta (himmennys) serta värilämpötilaa lämpimästä kylmään valkoiseen tilanteen mukaan.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €15<br>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
+                        </td>
+                    </tr>
 
-                <!-- Temperature Humidity sensor -->
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                    <td style="padding: 12px; width: 80px;"><img src="images/temp_humidity_sensor.jpg" alt="Lämpötila- ja kosteusanturi LCD-näytöllä" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
-                    <td style="padding: 12px;">
-                        <strong>Lämpötila- ja kosteusanturi LCD-näytöllä</strong><br>
-                        <small style="color: #64748b; display: block; margin-bottom: 5px;">Huoneilman ja mikoilmaston seurantaan.</small>
-                        <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
-                            Mahdollistaa huonetilan lämpötilan ja kostauden seurannan. Yhteensopivien laitteiden avulla tietoja voidaan käyttää lämmityksen tai ilmanvaihdon automaattiseen säätöön.
-                        </div>
-                    </td>
-                    <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
-                        Noin €20<br>
-                        <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">
-                            per kpl
-                        </small>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr>
+                        <td style="padding: 12px; width: 80px;"><img src="images/temp_humidity_sensor.jpg" alt="Lämpötila- ja kosteusanturi LCD-näytöllä" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px;"></td>
+                        <td style="padding: 12px;">
+                            <strong>Lämpötila- ja kosteusanturi LCD-näytöllä</strong><br>
+                            <small style="color: #64748b; display: block; margin-bottom: 5px;">Huoneilman ja mikoilmaston seurantaan.</small>
+                            <div style="font-size: 0.85rem; color: #475569; background: #f8fafc; padding: 10px; border-radius: 6px; border-left: 2px solid #cbd5e1; margin-top: 5px;">
+                                Mahdollistaa huonetilan lämpötilan ja kostauden seurannan. Yhteensopivien laitteiden avulla tietoja voidaan käyttää lämmityksen tai ilmanvaihdon automaattiseen säätöön.
+                            </div>
+                        </td>
+                        <td style="padding: 12px; text-align: right; font-weight: 600; color: #3b82f6; vertical-align: top; white-space: nowrap;">
+                            Noin €20<br>
+                            <small style="font-weight: normal; color: #64748b; font-size: 0.8rem;">per kpl</small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </details>
 
         <figure style="margin: 25px auto; max-width: 800px; text-align: center;">
             <img class="section-img" src="images/background_temp_sensor.jpg" alt="Esimerkki asennuksesta: Langaton lämpötila- ja kosteusanturi" style="display: block; margin: 0 auto; width: 100%; height: auto; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
