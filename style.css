@@ -329,3 +329,20 @@ nav ul li a:hover {
         margin: 0 auto;
     }
 }
+/* ==========================================================================
+   8. Info notes after user interface widget
+   ========================================================================== */
+.ui-info-note {
+    background: #f8fafc;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ui-info-note p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
