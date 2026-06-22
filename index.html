@@ -983,5 +983,35 @@
             }
         });
     </script>
+
+<script>
+    let lastScrollTop = 0;
+    const nav = document.querySelector('nav');
+    
+    const scrollThreshold = 50; 
+
+    window.addEventListener('scroll', () => {
+        
+        if (window.innerWidth <= 768) {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            
+            if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+                nav.classList.add('nav-hidden');
+            } 
+            
+            else if (scrollTop < lastScrollTop) {
+                nav.classList.remove('nav-hidden');
+            }
+
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        } else {
+            
+            nav.classList.remove('nav-hidden');
+        }
+    });
+</script>
+    
 </body>
 </html>
