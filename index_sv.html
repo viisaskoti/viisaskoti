@@ -870,3 +870,183 @@
         });
     </script>
 </section>
+
+<!-- SECTION Yhteystiedot -->
+<section id="yhteystiedot" style="margin-bottom: 60px;">
+
+    <!-- TITLE -->
+    <h2>Kontakt- och företagsinformation</h2>
+
+    <p style="text-indent: 25px; margin-bottom: 25px;">
+        Viisas Koti erbjuder smartahemslösningar och automation för hem, sommarstugor och småföretag. Kontakta oss, så planerar vi en lösning som passar just dina behov.
+    </p>
+
+    <!-- ABOUT CARD -->
+    <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; padding:22px; margin-bottom:20px;">
+
+    <h3 style="margin-top:0; color:#1e293b;">Vilka vi är</h3>
+
+    <p style="color:#475569; line-height:1.7; margin-bottom:12px; text-align: justify;">
+        Vi är ett team på två experter baserade i Uleåborg. 
+        Vi har med oss över 15 års erfarenhet inom industriell automation och programvaruutveckling, och vi använder nu denna kompetens för automationslösningar i hemmet – i form av tydliga, 
+        pålitliga och lättanvända helheter.
+    </p>
+
+    <p style="color:#475569; line-height:1.7; margin-bottom:0; text-align: justify;">
+        Vi kombinerar teknisk expertis med användarvänlighet: 
+        systemets pålitliga drift, enhetsintegrationer och automationer planeras noggrant, 
+        samtidigt som användargränssnittet görs tydligt och enkelt att använda för alla i hushållet.
+    </p>
+
+  </div>
+
+  <!-- CONTACT CARD -->
+  <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:22px; box-sizing: border-box;">
+
+    <h3 style="margin-top:0; text-align:center; color:#1e293b; font-size: 1.3rem;">
+        Kontakta oss
+    </h3>
+
+    <p style="text-align:center; color:#64748b; margin-bottom:25px; font-size: 0.95rem;">
+        Vi svarar vanligtvis inom 24–48 timmar.
+    </p>
+
+    <div style="max-width:420px; margin:0 auto; font-size:1rem; color:#334155;">
+
+          <!-- email -->
+          <div style="margin-bottom: 20px;">
+                <span style="display: inline-block; margin-bottom: 4px;">📧 <strong>E-post:</strong></span><br>
+                <span style="color:#334155; font-weight: 500;">viisaskoti.info@gmail.com</span>
+                
+                <!-- The button is right below the mail -->
+                <a href="mailto:viisaskoti.info@gmail.com" 
+                    style="display: block; text-align: center; background: #2563eb; color: white; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; margin-top: 8px; transition: background 0.2s; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                    Skicka e-post
+                </a>
+          </div>
+
+          <!-- WHATSAPP -->
+          <div style="margin-bottom: 20px;">
+                <span style="display: inline-block; margin-bottom: 4px;">📱 <strong>WhatsApp:</strong></span><br>
+                <span style="color:#334155; font-weight: 500;">+358 50 529 4929</span>
+                
+                <!-- The button is right below the phone -->
+                <a href="https://wa.me/358505294929" 
+                    style="display: block; text-align: center; background: #22c55e; color: white; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; margin-top: 8px; transition: background 0.2s; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                    Skicka WhatsApp-meddelande
+                </a>
+          </div>
+
+          <!-- Location -->
+          <div style="margin-bottom: 20px;">
+            <span style="display: inline-block; margin-bottom: 4px;">🌐 <strong>Verksamhetsområde:</strong></span><br>
+            <span style="color:#334155;">Vi är verksamma i Uleåborg och i hela Finland</span>
+          </div>
+
+          <!-- Older email -->
+          <div style="margin-top: 25px; font-size:0.85rem; color:#64748b; border-top:1px dashed #cbd5e1; padding-top:12px;">
+            📌 Tidigare e-post: embed.hardware@gmail.com
+          </div>
+    </div>
+  </div>
+
+</section>
+
+    <script>
+        // Sektio 1 hallinta
+        function toggleSection1() {
+            const sect1 = document.getElementById('ongelmat');
+            const items = sect1.querySelectorAll('.accordion-item');
+            const btn = document.getElementById('toggleAllBtn1');
+            
+            let anyOpen = false;
+            items.forEach(item => {
+                if (item.hasAttribute('open')) {
+                    anyOpen = true;
+                }
+            });
+
+            if (anyOpen) {
+                items.forEach(item => item.removeAttribute('open'));
+                btn.textContent = "Öppna alla avsnitt";
+            } else {
+                items.forEach(item => item.setAttribute('open', 'true'));
+                btn.textContent = "Stäng alla avsnitt";
+            }
+        }
+
+        // Sektio 2 hallinta
+        function toggleSection2() {
+            const container = document.getElementById('section2-accordions');
+            const items = container.querySelectorAll('.accordion-item');
+            const btn = document.getElementById('toggleAllBtnSec2');
+            
+            let anyOpen = false;
+            items.forEach(item => {
+                if (item.hasAttribute('open')) {
+                    anyOpen = true;
+                }
+            });
+
+            if (anyOpen) {
+                items.forEach(item => item.removeAttribute('open'));
+                btn.textContent = "Öppna alla avsnitt";
+            } else {
+                items.forEach(item => item.setAttribute('open', 'true'));
+                btn.textContent = "Stäng alla avsnitt";
+            }
+        }
+    </script>
+    </div>
+
+    <!-- To change background Oulu from 01 to 07 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const totalImages = 7; // Total images (01-07)
+            const randomNumber = Math.floor(Math.random() * totalImages) + 1;
+            
+            // Transform number to string
+            const formattedNumber = randomNumber.toString().padStart(2, '0');
+            
+            // path to folder in hero folder
+            const randomImageUrl = `images/hero/city_bg_${formattedNumber}.webp`;
+            
+            const heroElement = document.getElementById('hero-bg');
+            if (heroElement) {
+                // set random background image
+                heroElement.style.backgroundImage = `linear-gradient(rgba(34, 49, 63, 0.92), rgba(34, 49, 63, 0.92)), url('${randomImageUrl}')`;
+            }
+        });
+    </script>
+
+<script>
+    let lastScrollTop = 0;
+    const nav = document.querySelector('nav');
+    
+    const scrollThreshold = 50; 
+
+    window.addEventListener('scroll', () => {
+        
+        if (window.innerWidth <= 768) {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            
+            if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+                nav.classList.add('nav-hidden');
+            } 
+            
+            else if (scrollTop < lastScrollTop) {
+                nav.classList.remove('nav-hidden');
+            }
+
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        } else {
+            
+            nav.classList.remove('nav-hidden');
+        }
+    });
+</script>
+    
+</body>
+</html>
