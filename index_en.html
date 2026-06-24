@@ -169,3 +169,104 @@
     </figure>
         
 </section>
+
+<!-- SECTION Edut -->
+<section id="miksi-me" style="margin-bottom: 50px;">
+    <h2>How does our solution differ from others?</h2>
+    
+    <p style="text-indent: 25px; margin-bottom: 25px;">There are plenty of smart home solutions on the market, but we offer something completely different – <strong>independence from cloud services and the freedom to choose devices from various manufacturers</strong>.</p>
+
+    <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Expand all sections</button>
+
+    <!-- ACCORDIONS (All 3 important theses are fully preserved) -->
+    <div id="section2-accordions" style="margin-bottom: 25px;">
+         
+        <details class="accordion-item border-blue">
+            <summary>🌐 Fully local management</summary>
+                <div class="accordion-content">
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        Our system runs directly inside your home without requiring an internet connection. The internet is only needed <strong>if</strong> you want the system to display the current weather at your cottage, fetch <strong>spot electricity prices</strong>, or if you are traveling and want to check on your home remotely.
+                    </p>
+                </div>
+        </details>
+         
+        <details class="accordion-item border-blue">
+            <summary>☁️ No dependence on cloud services</summary>
+                <div class="accordion-content">
+                    <!-- First paragraph: The problem with most systems -->
+                    <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
+                        Most modern systems operate through the cloud. For example, when you turn on an alarm, the command first goes through a foreign server. If the internet disconnects or the cloud service crashes, the system stops working.
+                    </p>
+
+                    <!-- Second paragraph: Our advantage -->
+                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
+                        In our solution, all commands are executed locally inside your home in a completely offline mode. However, if needed, a <strong>secure remote connection</strong> can be configured for the system, implemented in full compliance with generally accepted cybersecurity practices.
+                    </p>
+                </div>
+        </details>
+         
+        <details class="accordion-item border-blue">
+            <summary>🔌 Independence from device manufacturers (Freedom to choose)</summary>
+                <div class="accordion-content">
+                    <!-- First paragraph: Freedom to choose brands -->
+                    <p>
+                        Our system does not tie you to one specific brand. You are free to buy, for example, a Philips smart bulb and pair it with a smart switch from another manufacturer – in our system, they will communicate with each other seamlessly.
+                    </p>
+                    <p>
+                        The main criterion is that the devices support the open standards and technologies (such as Zigbee, Matter, or Wi-Fi) on which the system is built in your home. We are always happy to help you select the right and compatible devices.
+                    </p>
+                    <p style="margin-top: 10px;">
+                        <strong>Do you already have Wi-Fi devices in use?</strong><br>
+                        It is also possible to integrate existing Wi-Fi devices into our system. However, since there are many different Wi-Fi device manufacturers on the market, we are happy to check the compatibility of these devices on a case-by-case basis before starting the installation.
+                    </p>
+                </div>
+        </details>
+    </div> 
+
+    <!-- TECHNOLOGICAL UNIT (Integrated openHAB, Zigbee and benefits table) -->
+        <h3>Reliable technologies without renovation worries</h3>
+        <p>
+            The core of our system is built upon the flexible, open-source openHAB platform. This allows for the seamless combination of various technologies and guarantees that the system adapts flexibly to your house's structure – <strong>without the need for major renovations</strong>.
+        </p>
+
+        <div class="ui-info-note">
+                <table class="responsive-card-table">
+                    <tbody>
+                        <tr>
+                            <td style="width: 35%;">Modern wireless freedom</td>
+                            <td style="color: #475569; font-size: 0.95rem;">
+                                We primarily use <strong>Zigbee</strong> and <strong>Matter</strong> standards. Most sensors run on batteries for years, so there is no need to run cables, and the installation will not affect any renovations already completed. 
+                                <br><small style="color: #64748b; display: block; margin-top: 5px;">*Note: certain devices (such as valve motors or heavy-duty relays) may require a local power supply.</small>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ready for professional-grade systems</td>
+                            <td style="color: #475569; font-size: 0.95rem;">
+                                The system adapts even to demanding properties. We can also integrate industrial and automation standards into the solution, such as <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong>, or <strong>LonWorks</strong>.
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Customized hardware support</td>
+                            <td style="color: #475569; font-size: 0.95rem;">
+                                Do your premises have specialized equipment? If needed, we are ready to implement a customized hardware and software solution specifically for your equipment under a separate agreement, ensuring it becomes part of a unified automation system.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+    <!-- A block with your actual photo of the tablet -->
+    <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
+        <img class="section-img" 
+             src="images/example_tab_edit_v02.webp" 
+             alt="Smart home 3D floor plans and user interface on a tablet" 
+             style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+        
+        <figcaption style="margin-top: 10px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4;">
+            📊 <strong>Interface example:</strong> Real-time monitoring of home conditions on an interactive 3D floor plan.
+        </figcaption>
+    </figure>
+    
+</section>
