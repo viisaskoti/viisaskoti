@@ -196,103 +196,173 @@
 <section id="miksi-me" style="margin-bottom: 50px;">
     <h2>Hur skiljer sig vår lösning från andra?</h2>
     
-    <p style="text-indent: 25px; margin-bottom: 25px;">Det finns många smarta hemslösningar på marknaden, men vi erbjuder något helt annorlunda – <strong>oberoende av molntjänster samt frihet att välja enheter från olika tillverkare</strong>.</p>
+    <p style="text-indent: 25px; margin-bottom: 25px;">Det finns många smarta hem-lösningar på marknaden, men vi erbjuder något helt annorlulla – <strong>oberoende av molntjänster samt friheten att välja enheter från olika tillverkare</strong>.</p>
 
     <button class="toggle-all-btn" id="toggleAllBtnSec2" onclick="toggleSection2()">Öppna alla avsnitt</button>
 
-    <!-- ACCORDIONS (All 3 important theses are fully preserved) -->
-    <div id="section2-accordions" style="margin-bottom: 25px;">
+    <!-- ACCORDIONS (Optimized with Yle investigation and local execution combo) -->
+    <div id="section2-accordions" style="margin-bottom: 35px;">
          
+        <!-- 1-ST ACCORDION: LOCAL CONTROL & OFFLINE (COMBINED) -->
         <details class="accordion-item border-blue">
-            <summary>🌐 Helt lokal hantering</summary>
-                <div class="accordion-content">
-                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                        Vårt system fungerar direkt i ditt hem utan krav på obligatorisk internetuppkoppling. Internet behövs endast <strong>om</strong> du vill verifiera det aktuella vädret vid din stuga, hämta <strong>börselpriser</strong> eller om du är på resa och vill kontrollera statusen i ditt hem på distans.
-                    </p>
-                </div>
+            <summary>🔒 Lokal styrning och datasäkerhet</summary>
+            <div class="accordion-content">
+                <p style="margin: 0 0 12px 0; text-indent: 25px; line-height: 1.6; color: #475569;">
+                    De flesta nuvarande system fungerar via molnet – kommandon går först via en utländsk server, och om internet kopplas bort eller molntjänsten kraschar, slutar systemet att fungera.
+                </p>
+                <p style="margin: 0 0 12px 0; text-indent: 25px; line-height: 1.6; color: #475569;">
+                    I vår lösning utförs alla kommandon <strong>lokalt direkt i ditt hem, helt offline</strong>. Systemet fungerar stabilt utan krav på obligatorisk internetuppkoppling.
+                </p>
+                <p style="margin: 0; text-indent: 25px; line-height: 1.6; font-size: 0.9rem; color: #64748b; font-style: italic;">
+                    *Internet krävs endast om du vill att systemet ska visa spotpriser på el, väderinformation eller om du vill använda en säker fjärranslutning när du är bortrest.
+                </p>
+            </div>
         </details>
          
+        <!-- 2-ND ACCORDION: REVISED YLE THESES (DIRECT PHONE & CONDITION ALERTS - UNBOLDED BRAND) -->
         <details class="accordion-item border-blue">
-            <summary>☁️ Inget beroende av molntjänster</summary>
-                <div class="accordion-content">
-                    <!-- First paragraph: The problem with most systems -->
-                    <p style="margin: 0 0 12px 0; text-align: justify; text-indent: 25px;">
-                        De flesta nuvarande system fungerar via molnet. Till exempel när du slår på ett larm går kommandot först via en utländsk server. Om internet går ner eller molntjänsten kraschar slutar systemet att fungera.
+            <summary>🛡️ Oberoende av traditionella säkerhetsbolag</summary>
+            <div class="accordion-content" style="color: #475569; line-height: 1.6; font-size: 0.95rem;">
+                
+                <!-- Point 1: Police response and standard processes -->
+                <div style="margin-bottom: 22px;">
+                    <p style="margin: 0 0 8px 0; font-style: italic; border-left: 3px solid #cbd5e1; padding-left: 12px; color: #64748b;">
+                        📌 Poliisihallituksen mukaan se, miten poliisi reagoi erilaisiin hätäkeskuksen kautta tuleviin ilmoituksiin, menee aina normaalin prosessin mukaisesti. Lähtökohtaisesti sillä ei ole merkitystä, miten tehtävä on tullut viranomaisten tietoon. Tapauskohtainen harkinta ratkaisee siis aina. 
+                        — <a href="https://yle.fi/a/74-20227488" target="_blank" style="color: #2563eb; text-decoration: underline; font-weight: 500;">Yle Uutiset</a>
                     </p>
-
-                    <!-- Second paragraph: Our advantage -->
-                    <p style="margin: 0; text-align: justify; text-indent: 25px;">
-                        I vår lösning körs alla kommandon lokalt direkt i ditt hem helt i offline-läge. Vid behov kan systemet dock konfigureras med en <strong>säker fjärranslutning</strong>, vilket implementeras i enlighet med allmänt accepterad säkerhetspraxis.
+                    <p style="margin: 0; padding-left: 15px;">
+                        💡 <strong>Hur detta påverkar dig:</strong><br>
+                        Enligt myndigheterna hanteras alla larm enligt samma standardprocedur, oavsett vilket system meddelandet kommer ifrån.
+                    </p>
+                    <p style="margin: 8px 0 0 0; padding-left: 15px;">
+                        Systemet Viisas Koti vidarebefordrar larmsignalen direkt till din telefon, vilket gör att du själv kan utvärdera situationen och vid behov kontakta nödcentralen utan mellanhänder.
                     </p>
                 </div>
+        
+                <!-- Point 2: Statistics and video verification -->
+                <div style="margin-bottom: 22px;">
+                    <p style="margin: 0 0 8px 0; font-style: italic; border-left: 3px solid #cbd5e1; padding-left: 12px; color: #64748b;">
+                        📌 Verisuren tilastojen mukaan heidän asiakkaidensa laitteista Suomessa tuli noin 320 000 hälytystä. Runsaassa 5 000 tapauksessa hälytyskeskuspäivystäjä on lähettänyt vartijan kohteeseen. Lopulta vain pieni osa, eli noin 600, on ollut niin sanotusti oikeita.
+                        — <a href="https://yle.fi/a/74-20227488" target="_blank" style="color: #2563eb; text-decoration: underline; font-weight: 500;">Yle Uutiset</a>
+                    </p>
+                    <p style="margin: 0; padding-left: 15px;">
+                        💡 <strong>Hur detta påverkar dig:</strong><br>
+                        Statistiken visar att en stor majoritet av larmen inte leder till ett faktiskt platsbesök eller en bekräftad farosituation.
+                    </p>
+                    <p style="margin: 8px 0 0 0; padding-left: 15px;">
+                        Automationssystemet Viisas Koti skickar ett meddelande när fastställda villkor uppfylls och kan överföra videobilder. Tack vare detta kan du själv kontrollera situationen och undvika onödiga larmutryckningar och tillhörande kostnader.
+                    </p>
+                </div>
+        
+                <!-- Point 3: Insurance benefits and self-protection -->
+                <div style="margin-bottom: 5px;">
+                    <p style="margin: 0 0 8px 0; font-style: italic; border-left: 3px solid #cbd5e1; padding-left: 12px; color: #64748b;">
+                        📌 Osa vakuutusyhtiöistä ei peri vakuutuskorvauksen omavastuuta, jos laitteisto on toiminut tai rajoittanut vahinkoa. Näin toimivat muun muassa If ja Pohjola vakuutus. Lähi-Tapiola antaa turvalaitteiden perusteella myös alennusta kotivakuutuksen vakuutusmaksusta.
+                        — <a href="https://yle.fi/a/74-20227488" target="_blank" style="color: #2563eb; text-decoration: underline; font-weight: 500;">Yle Uutiset</a>
+                    </p>
+                    <p style="margin: 0; padding-left: 15px;">
+                        💡 <strong>Hur detta påverkar dig:</strong><br>
+                        Vissa försäkringsbolag beaktar fungerande säkerhetsenheter till exempel genom självrisken eller försäkringspremierna från fall till fall.
+                    </p>
+                    <p style="margin: 8px 0 0 0; padding-left: 15px;">
+                        Automatiska system, såsom läckagedetektering och avstängning av huvudventilen, kan bidra till att begränsa skador och förbättra ditt hems säkerhetsnivå i försäkringsbolagens bedömningar.
+                    </p>
+                </div>
+        
+            </div>
         </details>
-         
+        
+        <!-- 3-RD ACCORDION: FREEDOM OF CHOICE & EXISTING DEVICES INTEGRATION -->
         <details class="accordion-item border-blue">
-            <summary>🔌 Oberoende av tillverkare (Frihet outdoor att välja)</summary>
-                <div class="accordion-content">
-                    <!-- First paragraph: Freedom to choose brands -->
-                    <p>
-                        Vårt system binder dig inte till ett specifikt varumärke. Du kan fritt köpa till exempel en Philips smartlampa och koppla den till en smartbrytare från en annan tillverkare – i vårt system kommunicerar de sömlöst med varandra.
+            <summary>🔌 Frihet att välja enheter och varumärken</summary>
+            <div class="accordion-content" style="color: #475569; line-height: 1.6; font-size: 0.95rem;">
+                
+                <p style="margin: 0 0 12px 0;">
+                    Vårt system binder dig inte till ett specifikt varumärke. Du kan fritt köpa till exempel en smart lampa från Philips och ansluta den till en smart strömbrytare från en annan tillverkare – i vårt system kommunicerar de sömlöst med varandra.
+                </p>
+                
+                <p style="margin: 0 0 16px 0;">
+                    Det viktigaste kriteriet är att enheterna stöder de öppna standarder och teknologier (såsom Zigbee, Matter eller Wi-Fi) som systemet byggs med i ditt hem. Vi hjälper dig alltid gärna att välja rätt och kompatibla enheter.
+                </p>
+                
+                <!-- Section about existing devices -->
+                <div style="padding-top: 14px; border-top: 1px solid #e2e8f0;">
+                    <p style="margin: 0 0 8px 0; font-weight: 600; color: #1e293b;">
+                        Använder du redan smarta enheter?
                     </p>
-                    <p>
-                        Det viktigaste kriteriet är att enheterna stöder de öppna standarder och teknologier (såsom Zigbee, Matter eller Wi-Fi) som systemet byggs med i ditt hem. Vi hjälper alltid gärna till med att välja rätt och kompatibla enheter.
+                    <p style="margin: 0 0 16px 0;">
+                        Oavsett om det gäller befintliga Wi-Fi-enheter, smarta hushållsapparater eller andra system, undersöker vi gärna hur de kan integreras som en del av den nya helheten. Vi kontrollerar enheternas kompatibilitet från fall till fall innan installationen påbörjas.
                     </p>
-                    <p style="margin-top: 10px;">
-                        <strong>Har du redan Wi-Fi-enheter i bruk?</strong><br>
-                        Det är också möjligt att integrera befintliga Wi-Fi-enheter som en del av vårt system. Eftersom det finns flera olika tillverkare av Wi-Fi-enheter på marknaden kontrollerar vi gärna kompatibiliteten för dessa enheter från fall till fall innan installationen påbörjas.
-                    </p>
+                    
+                    <!-- Call to Action Link -->
+                    <div style="margin-top: 14px;">
+                        <a href="#yhteystiedot" style="display: inline-flex; align-items: center; gap: 6px; color: #2563eb; text-decoration: none; font-weight: 500; font-size: 0.95rem; border-bottom: 1px dashed #2563eb; padding-bottom: 2px; transition: color 0.2s;">
+                            💬 Vi hjälper dig gärna att kartlägga integrationsmöjligheterna för dina nuvarande enheter kostnadsfritt →
+                        </a>
+                    </div>
                 </div>
+        
+            </div>
         </details>
     </div> 
 
-    <!-- TECHNOLOGICAL UNIT (Integrated openHAB, Zigbee and benefits table) -->
-        <h3>Pålitliga teknologier utan renoveringsbekymmer</h3>
-        <p>
-            Kärnan i vårt system bygger på den flexibla openHAB-plattformen med öppen källkod. Detta möjliggör en sömlös integration av olika teknologier och garanterar att systemet anpassar sig flexibelt efter ditt hus strukturer – <strong>utan behov av stora renoveringar</strong>.
-        </p>
+    <!-- TECHNOLOGICAL UNIT (Refactored to modern, clean cards) -->
+    <h3 style="margin-top: 40px; margin-bottom: 15px; color: #1e293b; font-size: 1.35rem;">🛠️ Pålitlig teknik utan renoveringsoro</h3>
+    <p style="margin-bottom: 25px; color: #475569; line-height: 1.6;">
+        Kärnan i vårt system bygger på den flexibla open source-plattformen openHAB. Detta säkerställer en sömlös integration av olika teknologier och gör det möjligt att anpassa systemet till ditt hus nuvarande strukturer - <strong>utan stora renoveringar</strong>.
+    </p>
 
-        <div class="ui-info-note">
-                <table class="responsive-card-table">
-                    <tbody>
-                        <tr>
-                            <td style="width: 35%;">Modern trådlös frihet</td>
-                            <td style="color: #475569; font-size: 0.95rem;">
-                                Vi använder i första hand standarderna <strong>Zigbee</strong> och <strong>Matter</strong>. De flesta sensorer fungerar med batterier i flera år, så inga kablar behöver dras, och installationen påverkar inte en redan gjord renovering. 
-                                <br><small style="color: #64748b; display: block; margin-top: 5px;">*Obs: vissa enheter (såsom ventilmotorer eller kraftiga reläer) kan kräva lokal strömförsörjning.</small>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Redo för system på professionell nivå</td>
-                            <td style="color: #475569; font-size: 0.95rem;">
-                                Systemet anpassar sig även till krävande objekt. Vi kan också integrera industri- och automationsstandarder i lösningen, såsom <strong>Modbus / ModbusTCP</strong>, <strong>KNX</strong> или <strong>LonWorks</strong>.
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Skräddarsytt enhetsstöd</td>
-                            <td style="color: #475569; font-size: 0.95rem;">
-                                Har du specialutrustning i dina lokaler? Vid behov är vi redo att förverkliga en anpassad hårdvaru- och mjukvarulösning exakt för din utrustning enligt separat avtal, så att den blir en del av en enhetlig automation.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Modern Grid instead of the old tight table -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 35px;">
+        
+        <!-- Card 1 -->
+        <div style="background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h4 style="margin: 0 0 10px 0; color: #0f766e; font-size: 1.05rem; font-weight: 600;">🌐 Modern trådlös frihet</h4>
+            <p style="margin: 0 0 10px 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+                Vi använder i första hand standarderna Zigbee och Matter. Vår praktiska erfarenhet visar att vissa sensorer fungerar på samma batterier i över två år. Tack vare detta behöver inga kablar dras, och installationen påverkar inte renoveringar som redan har utförts.
+            </p>
+            <span style="font-size: 0.8rem; color: #64748b; font-style: italic; display: block; margin-top: 5px;">
+                *Obs: vissa enheter (såsom ventilmotorer eller tunga reläer) kan kräva lokal strömförsörjning.
+            </span>
         </div>
 
-    <!-- A block with your actual photo of the tablet -->
+        <!-- Card 2 -->
+        <div style="background: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h4 style="margin: 0 0 10px 0; color: #1e3a8a; font-size: 1.05rem; font-weight: 600;">🏗️ Redo för system på professionell nivå</h4>
+            <!-- Paragraph 1: Popular consumer brands -->
+                <p style="margin: 0 0 10px 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+                    Systemet anpassar sig även till krävande fastigheter. Vi kan integrera lösningar i helheten såsom Nibe-värmepumpar, Tesla-elbilar samt ABB free@home-lösningar.
+                </p>
+                
+                <!-- Paragraph 2: Professional engineering standards (open list) -->
+                <p style="margin: 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+                    Kompatibiliteten omfattar till exempel standarder på professionell nivå som KNX, DALI och Modbus.
+                </p>
+        </div>
+    </div>
+
+    <!-- Custom Integration Callout Box -->
+    <div style="background: #f8fafc; padding: 18px 20px; border-radius: 8px; border-left: 4px solid #64748b; margin-bottom: 40px;">
+        <p style="margin: 0; color: #475569; font-size: 0.95rem; line-height: 1.5;">
+            🧩 <strong>Skräddarsydd enhetsintegration:</strong> Har du specialutrustning i din fastighet? Vid behov kan vi implementera en anpassad mjukvaru- eller hårdvarulösning exakt för dina behov enligt ett separat avtal, så att även mer sällsynta enheter blir en del av en enhetlig automation.
+        </p>
+    </div>
+
+    <!-- Original UI Tablet Image Block Fully Preserved -->
     <figure style="margin: 30px auto 0 auto; max-width: 650px; text-align: center;">
         <img class="section-img" 
              src="images/example_tab_edit_v02.webp" 
-             alt="Smarthems 3D-planritningar och användargränssnitt på en surfplatta" 
+             alt="Smarta hemmets 3D-planritningar och användargränssnitt på en surfplatta" 
              style="display: block; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
         
         <figcaption style="margin-top: 10px; color: #64748b; font-size: 0.85rem; font-style: italic; line-height: 1.4;">
-            📊 <strong>Exempel på användargränssnitt:</strong> Realtidsövervakning av hemförhållanden på en interaktiv 3D-planritning.
+            📊 <strong>Exempel på gränssnitt:</strong> Realtidsövervakning av hemförhållanden på en interaktiv 3D-planritning.
         </figcaption>
     </figure>
     
 </section>
-
+    
+<!-- SECTION price -->
 <section id="hinnasto" style="margin-bottom: 50px;">
     <h2>Prissättning</h2>
     
